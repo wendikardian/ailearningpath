@@ -2,19 +2,121 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Challenge;
 use App\Models\ChallengeTaken;
 use App\Models\DetailLearning;
 use App\Models\EvaluationTaken;
+use App\Models\Learning;
 use App\Models\Notification;
+use App\Models\QuizTaken;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
     public function index()
     {
+        $user = User::with(['achievement', 'challengeTaken', 'learning'])->get();
+        $quiz_takens = Learning::all();
         return view('admin/home', [
-            "title" => "Home"
+            "title" => "Dashboard",
+            "user" => $user,
+            "quiz_takens" => $quiz_takens
+        ]);
+    }
+
+    function random_color_part()
+    {
+        return str_pad(dechex(mt_rand(0, 255)), 2, '0', STR_PAD_LEFT);
+    }
+
+    function random_color()
+    {
+        return $this->random_color_part() . $this->random_color_part() . $this->random_color_part();
+    }
+
+
+    public function detailDashboard(User $user)
+    {
+        $user = User::with(['achievement', 'challengeTaken', 'learning'])->where('id', "=", $user->id)->get();
+        $arrayDataPointUser = array();
+        $arrayDataPengalamanUser = array();
+        $arrayNamaPointUser = array();
+        $arrayColorPointUser = array();
+        $arrayColorPengalamanUser = array();
+        $arrayColorChallengesUser = array();
+        $arrayDataChallengesUser = array();
+        $arrayNamaChallengesUser = array();
+        $arrayColorQuizTakensUser = array();
+        $arrayDataQuizTakensUser = array();
+        $arrayNamaQuizTakensUser = array();
+        $arrayColorEvaluationTakensUser = array();
+        $arrayDataEvaluationTakensUser = array();
+        $arrayNamaEvaluationTakensUser = array();
+        $check = array();
+        foreach ($user as $value) {
+            array_push($arrayDataPointUser, $value->achievement->total_point);
+            array_push($arrayDataPengalamanUser, $value->achievement->total_xp);
+            array_push($arrayNamaPointUser, $value->name);
+            array_push($arrayColorPointUser, "#" . $this->random_color());
+            array_push($arrayColorPengalamanUser, "#" . $this->random_color());
+            if ($value->challengeTaken) {
+                foreach ($value->challengeTaken as $dataChallenge) {
+                    $challenge = Challenge::where('id', '=', $dataChallenge->challenge_id)->first();
+                    array_push($arrayColorChallengesUser, "#" . $this->random_color());
+                    array_push($arrayDataChallengesUser, $dataChallenge->score);
+                    array_push($arrayNamaChallengesUser, $challenge->judul);
+                }
+            }
+            $quizTaken = QuizTaken::select("courses.judul", DB::raw('sum(quiz_takens.total_point) as total_point'))
+                ->join('detail_learnings', 'quiz_takens.detail_learning_id', 'detail_learnings.id')
+                ->join('learnings', 'detail_learnings.learning_id', 'learnings.id')
+                ->join('courses', 'learnings.course_id', 'courses.id')
+                ->where('learnings.user_id', "=", $value->id)
+                ->groupBy('courses.id')
+                ->get();
+            if ($quizTaken) {
+                foreach ($quizTaken as $valueQuizTaken) {
+                    array_push($arrayColorQuizTakensUser, "#" . $this->random_color());
+                    array_push($arrayDataQuizTakensUser, $valueQuizTaken->total_point);
+                    array_push($arrayNamaQuizTakensUser, $valueQuizTaken->judul);
+                }
+            }
+            $evaluationTaken = EvaluationTaken::select("courses.judul", DB::raw('sum(evaluation_takens.nilai) as total_point'))
+                ->join('detail_learnings', 'evaluation_takens.detail_learning_id', 'detail_learnings.id')
+                ->join('learnings', 'detail_learnings.learning_id', 'learnings.id')
+                ->join('courses', 'learnings.course_id', 'courses.id')
+                ->where('learnings.user_id', "=", $value->id)
+                ->groupBy('courses.id')
+                ->get();
+            if ($evaluationTaken) {
+                foreach ($evaluationTaken as $valueEvaluationTaken) {
+                    array_push($arrayColorEvaluationTakensUser, "#" . $this->random_color());
+                    array_push($arrayDataEvaluationTakensUser, $valueEvaluationTaken->total_point);
+                    array_push($arrayNamaEvaluationTakensUser, $valueEvaluationTaken->judul);
+                }
+            }
+        }
+        return view('admin/detail_dashboard', [
+            "title" => "Home",
+            "user" => $user,
+            "arrayDataPointUser" => $arrayDataPointUser,
+            "arrayDataPengalamanUser" => $arrayDataPengalamanUser,
+            "arrayNamaPointUser" => $arrayNamaPointUser,
+            "arrayColorPointUser" => $arrayColorPointUser,
+            "arrayColorPengalamanUser" => $arrayColorPengalamanUser,
+            "arrayColorChallengesUser" => $arrayColorChallengesUser,
+            "arrayDataChallengesUser" => $arrayDataChallengesUser,
+            "arrayNamaChallengesUser" => $arrayNamaChallengesUser,
+            "arrayColorQuizTakensUser" => $arrayColorQuizTakensUser,
+            "arrayDataQuizTakensUser" => $arrayDataQuizTakensUser,
+            "arrayNamaQuizTakensUser" => $arrayNamaQuizTakensUser,
+            "arrayColorEvaluationTakensUser" => $arrayColorEvaluationTakensUser,
+            "arrayDataEvaluationTakensUser" => $arrayDataEvaluationTakensUser,
+            "arrayNamaEvaluationTakensUser" => $arrayNamaEvaluationTakensUser,
+            "check" => $check
         ]);
     }
 

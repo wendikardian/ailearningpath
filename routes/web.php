@@ -78,6 +78,7 @@ Route::post('/keluar', [LoginController::class, 'signout']);
 
 //Admin
 Route::get('/admin/home', [AdminController::class, 'index'])->name('admin.route')->middleware('admin');
+Route::get('/admin/detail_dashboard/{user:id}', [AdminController::class, 'detailDashboard'])->middleware('admin');
 Route::get('/admin/evaluation', [AdminController::class, 'evaluation'])->middleware('admin');
 Route::post('/admin/evaluation/update', [AdminController::class, 'evaluationUpdate']);
 Route::get('/admin/evaluation/detail/{evaluationTaken:id}', [AdminController::class, 'evaluationDetail'])->middleware('admin');
