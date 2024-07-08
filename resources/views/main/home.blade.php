@@ -11,7 +11,7 @@
 @endif
   <div class="flex p-8 h-[30rem] justify-between items-center bg-orange-400 rounded-2xl mt-4">
     <div class="">
-      <p class="font-semibold text-white text-6xl mb-8 drop-shadow-md">Welcome to eCraft2Learn</p>
+      <p class="font-semibold text-white text-6xl mb-8 drop-shadow-md">Welcome to  AI Learning Path</p>
       <p class="text-xl mb-6 text-white">Ayo belajar Artificial Intelligence dengan mudah dan menyenangkan!</p>
       <a href="/courses" class="btn rounded-xl normal-case text-primary hover:bg-secondary hover:text-white border-0">Lihat Courses</a>
     </div>
