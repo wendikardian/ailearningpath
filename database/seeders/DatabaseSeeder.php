@@ -297,7 +297,47 @@ class DatabaseSeeder extends Seeder
         SubCourse::create([
             'course_id' => 4,
             'judul_sub' => 'Quiz',
-            'desc' => 'Pada sub materi ini, teman-teman akan membuat proyek dengan menggunakan pengenalan gambar.'
+            'desc' => 'Pada sub materi ini, teman-teman akan diberikan kuis untuk menguji pemahaman teman-teman.'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Pengenalan',
+            'desc' => 'Pada sub materi ini, teman-teman akan mempelajari bagaimana cara komputer mengolah sebuah kata atau yang biasa sering kita sebut pemrosesan bahasa alami.'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Pemrosesan kata',
+            'desc' => 'Pada bagian ini, teman-teman akan belajar bagaimana cara mengubah kata menjadi sebuah angka dan mencari kedekatan antara 1 kata dengan kata lainnya'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Pemrosesan kata dan kalimat menggunakan Snap!',
+            'desc' => 'Pada bagian ini, teman-teman akan belajar bagaimana caranya menerapkan pemrosesan bahasa alami dengan menggunakan snap hingga kamu bisa membuat project mu sendiri'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Integrasikan dengan model GPT',
+            'desc' => 'Pada bagian ini, teman-teman akan belajar pemrosesan bahasa alami dengan menggunakan model GPT untuk menghasilkan kata atau kalimat yang lebih baik'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Bahasa dan resiko menggunakan word embedding',
+            'desc' => 'Pada bagian ini, teman-teman akan dikenalkan bahayanya teknologi pemrosesan bahasa alami apabila digunakan secara sembarangan'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Word embeddings',
+            'desc' => 'Bagaimana cara Word Embeddings bekerja ? '
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Proyek',
+            'desc' => 'Pada sub materi ini, teman-teman akan membuat proyek dengan mengimplementasikan Pemrosesan Bahasa Alami.'
+        ]);
+        SubCourse::create([
+            'course_id' => 5,
+            'judul_sub' => 'Quiz time',
+            'desc' => 'Pada sub materi ini, teman-teman akan diberikan kuis untuk menguji pemahaman teman-teman.'
         ]);
 
 
@@ -945,6 +985,358 @@ class DatabaseSeeder extends Seeder
         //     'prev_id' => 72,
         //     'next_id' => 0,
         // ]);
+        Content::create([ //74
+            'id' => 74,
+            'course_id' => 5,
+            'sub_course_id' => 28,
+            'judul' => 'Browser Compability',
+            'tipe_content' => 1,
+            'prev_id' => 0,
+            'next_id' => 75,
+        ]);
+        
+        Content::create([ //75
+            'course_id' => 5,
+            'sub_course_id' => 28,
+            'judul' => 'Pengenalan',
+            'tipe_content' => 1,
+            'prev_id' => 74,
+            'next_id' => 76,
+        ]);
+        Content::create([ //76
+            'course_id' => 5,
+            'sub_course_id' => 28,
+            'judul' => 'Perhitungan aritmatika dengan kata dan kalimat',
+            'tipe_content' => 1,
+            'prev_id' => 75,
+            'next_id' => 77,
+        ]);
+        Content::create([ //77
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            'judul' => 'Mengubah kata menjadi angka',
+            'tipe_content' => 1,
+            'prev_id' => 76,
+            'next_id' => 78,
+        ]);
+        Content::create([ //78
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            'judul' => 'Menemukan kata terdekat ke dalam list feature kata',
+            'tipe_content' => 1,
+            'prev_id' => 77,
+            'next_id' => 79,
+        ]);
+        Content::create([ //79
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            // finding the word half way between two other words
+            'judul' => 'Mencari kata yang berada di tengah-tengah dua kata lainnya',
+            'tipe_content' => 1,
+            'prev_id' => 78,
+            'next_id' => 80,
+        ]);
+        Content::create([ //80
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            // Using word embeddings to solve word analogy problems
+            'judul' => 'Menggunakan word embeddings untuk menyelesaikan masalah analogi kata',
+            'tipe_content' => 1,
+            'prev_id' => 79,
+            'next_id' => 81,
+        ]);
+        Content::create([ //81
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            // Finding all the 'closest' words
+            'judul' => 'Mencari semua kata yang terdekat',
+            'tipe_content' => 1,
+            'prev_id' => 80,
+            'next_id' => 82,
+        ]);
+        Content::create([ //82
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            // Finding how close some features are to a list of other features
+            'judul' => 'Mencari seberapa dekat beberapa fitur ke dalam list fitur lainnya',
+            'tipe_content' => 1,
+            'prev_id' => 81,
+            'next_id' => 83,
+        ]);
+        Content::create([ //83
+            'course_id' => 5,
+            'sub_course_id' => 29,
+            // Sentence embeddings
+            'judul' => 'Kalimat embeddings',
+            'tipe_content' => 1,
+            'prev_id' => 82,
+            'next_id' => 84,
+        ]);
+        Content::create([ //84
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // AI-aided search in the Snap! manual and the AI guide
+            'judul' => 'Pencarian AI dalam manual Snap! dan panduan AI',
+            'tipe_content' => 1,
+            'prev_id' => 83,
+            'next_id' => 85,
+        ]);
+        Content::create([ //85
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // Drawing word embeddings
+            'judul' => 'Menggambar word embeddings',
+            'tipe_content' => 1,
+            'prev_id' => 84,
+            'next_id' => 86,
+        ]);
+        Content::create([ //86
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // Mapping 300 dimensional points to two-dimensional points
+            'judul' => 'Memetakan titik 300 dimensi ke titik dua dimensi',
+            'tipe_content' => 1,
+            'prev_id' => 85,
+            'next_id' => 87,
+        ]);
+        Content::create([ //87
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // Generating Projector Files to visualize embeddings
+            'judul' => 'Menghasilkan File Projector untuk memvisualisasikan embeddings',
+            'tipe_content' => 1,
+            'prev_id' => 86,
+            'next_id' => 88,
+        ]);
+
+        Content::create([ //88
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // Word embeddings can do translations
+            'judul' => 'Word embeddings dapat melakukan terjemahan',
+            'tipe_content' => 1,
+            'prev_id' => 87,
+            'next_id' => 89,
+        ]);
+        Content::create([ //89
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // A 'Guess My Word' game using word embeddings
+            'judul' => 'Permainan "Tebak Kata Saya" menggunakan word embeddings',
+            'tipe_content' => 1,
+            'prev_id' => 88,
+            'next_id' => 90,
+        ]);
+        Content::create([ //90
+            'course_id' => 5,
+            'sub_course_id' => 30,
+            // Question answering
+            'judul' => 'Question Answering',
+            'tipe_content' => 1,
+            'prev_id' => 89,
+            'next_id' => 91,
+        ]);
+        Content::create([ //91
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Getting responses from GPT-3, Jurassic 1, or Cohere
+            'judul' => 'Mendapatkan respon dari GPT-3, Jurassic 1, atau Cohere',
+            'tipe_content' => 1,
+            'prev_id' => 90,
+            'next_id' => 92,
+        ]);
+        Content::create([ //92
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Having a conversation with GPT-3, Jurassic 1, or Cohere
+            'judul' => 'Berbicara dengan GPT-3, Jurassic 1, atau Cohere',
+            'tipe_content' => 1,
+            'prev_id' => 91,
+            'next_id' => 93,
+        ]);
+        Content::create([ //93
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Generating debates
+            'judul' => 'Menghasilkan debat',
+            'tipe_content' => 1,
+            'prev_id' => 92,
+            'next_id' => 94,
+        ]);
+
+        Content::create([ //94
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Generating turtle commands
+            'judul' => 'Menghasilkan perintah turtle',
+            'tipe_content' => 1,
+            'prev_id' => 93,
+            'next_id' => 95,
+        ]);
+        Content::create([ //95
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Using words to generate costumes using DALLE-2
+            'judul' => 'Menggunakan kata untuk menghasilkan kostum menggunakan DALLE-2',
+            'tipe_content' => 1,
+            'prev_id' => 94,
+            'next_id' => 96,
+        ]);
+        Content::create([ //96
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Using Stable Diffusion to generate a costume
+            'judul' => 'Menggunakan Stable Diffusion untuk menghasilkan kostum',
+            'tipe_content' => 1,
+            'prev_id' => 95,
+            'next_id' => 97,
+        ]);
+        Content::create([ //97
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // A generic text-to-image block
+            'judul' => 'Blok teks ke gambar generik',
+            'tipe_content' => 1,
+            'prev_id' => 96,
+            'next_id' => 98,
+        ]);
+        Content::create([ //98
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Using DALL-E-2 to create variants of a costume
+            'judul' => 'Menggunakan DALL-E-2 untuk membuat varian kostum',
+            'tipe_content' => 1,
+            'prev_id' => 97,
+            'next_id' => 99,
+        ]);
+        Content::create([ //99
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Using DALL-E-2 to edit a costume
+            'judul' => 'Menggunakan DALL-E-2 untuk mengedit kostum',
+            'tipe_content' => 1,
+            'prev_id' => 98,
+            'next_id' => 100,
+        ]);
+        Content::create([ //100
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Using language models on Hugging Face
+            'judul' => 'Menggunakan model bahasa di Hugging Face',
+            'tipe_content' => 1,
+            'prev_id' => 99,
+            'next_id' => 101,
+        ]);
+        Content::create([ //101
+            'course_id' => 5,
+            'sub_course_id' => 31,
+            // Generating clues for the Codenames board game
+            'judul' => 'Menghasilkan petunjuk untuk permainan papan Codenames',
+            'tipe_content' => 1,
+            'prev_id' => 100,
+            'next_id' => 102,
+        ]);
+        Content::create([ //102
+            'course_id' => 5,
+            'sub_course_id' => 32,
+            // Benefits and risks using word embeddings
+            'judul' => 'Manfaat dan risiko menggunakan word embeddings',
+            'tipe_content' => 1,
+            'prev_id' => 101,
+            'next_id' => 103,
+        ]);
+        Content::create([ //103
+            'course_id' => 5,
+            'sub_course_id' => 33,
+            // How do word embeddings work?
+            'judul' => 'Bagaimana word embeddings bekerja?',
+            'tipe_content' => 1,
+            'prev_id' => 102,
+            'next_id' => 104,
+        ]);
+        Content::create([ //104
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // A sample project using word embeddings for translation
+            'judul' => 'Proyek contoh menggunakan word embeddings untuk terjemahan',
+            'tipe_content' => 1,
+            'prev_id' => 103,
+            'next_id' => 105,
+        ]);
+        Content::create([ //105
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // How does translation using word embeddings work?
+            'judul' => 'Bagaimana terjemahan menggunakan word embeddings bekerja?',
+            'tipe_content' => 1,
+            'prev_id' => 104,
+            'next_id' => 106,
+        ]);
+        Content::create([ //106
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Image embeddings are possible as well
+            'judul' => 'Embedding gambar juga memungkinkan',
+            'tipe_content' => 1,
+            'prev_id' => 105,
+            'next_id' => 107,
+        ]);
+        Content::create([ //107
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Possible project ideas for Natural Language Processing
+            'judul' => 'Ide proyek yang mungkin untuk Pemrosesan Bahasa Alami',
+            'tipe_content' => 1,
+            'prev_id' => 106,
+            'next_id' => 108,
+        ]);
+        Content::create([ //108
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Future directions for this chapter
+            'judul' => 'Arah masa depan untuk materi ini',
+            'tipe_content' => 1,
+            'prev_id' => 107,
+            'next_id' => 109,
+        ]);
+        Content::create([ //109
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Additional resources
+            'judul' => 'Sumber tambahan',
+            'tipe_content' => 1,
+            'prev_id' => 108,
+            'next_id' => 110,
+        ]);
+        Content::create([ //110
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Where to get these blocks to use in your projects
+            'judul' => 'Dimana mendapatkan blok ini untuk digunakan dalam proyek Anda',
+            'tipe_content' => 1,
+            'prev_id' => 109,
+            'next_id' => 111,
+        ]);
+        Content::create([ //111
+            'course_id' => 5,
+            'sub_course_id' => 34,
+            // Learn about making and training neural nets
+            'judul' => 'Pelajari tentang membuat dan melatih jaringan saraf',
+            'tipe_content' => 1,
+            'prev_id' => 110,
+            'next_id' => 112,
+        ]);
+        // Content::create([ //112
+        //     'course_id' => 5,
+        //     'sub_course_id' => 35,
+        //     'judul' => 'Quiz',
+        //     'tipe_content' => 2,
+        //     'prev_id' => 111,
+        //     'next_id' => 0,
+        // ]);
+        
+
+
 
 
         // END OF CONTENT CHAPTER 4 //
