@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Achievement;
 use App\Models\Answer;
 use App\Models\Challenge;
 use App\Models\Content;
@@ -34,13 +35,20 @@ class DatabaseSeeder extends Seeder
             'status' => 1
 
         ]);
-        // User::create([
-        //     'email' => 'wendikardian@gmail.com',
-        //     'name' => 'Wendi',
-        //     'is_admin' => 1,
-        //     'password' => Hash::make('wendikardian'),
-        //     'status' => 1
-        // ]);
+
+        User::create([
+            'email' => 'wendikardian@gmail.com',
+            'name' => 'Wendi',
+            'is_admin' => 1,
+            'password' => Hash::make('wendikardian'),
+            'status' => 1
+        ]);
+        Achievement::create([
+            'user_id' => 2,
+            'total_point' => 0,
+            'total_xp' => 0,
+            'level' => 0,
+        ]);
 
         Course::create([
             'judul' => 'Speech Synthesis dalam Artificial Intelegence',
@@ -229,7 +237,7 @@ class DatabaseSeeder extends Seeder
         SubCourse::create([
             'course_id' => 3,
             'judul_sub' => 'Pendahuluan',
-            'desc' => 'Selamat datang di course Pengenalan Gambar dalam Artificial Intelligence. Pertama-tama, mari kita cari tahu apa itu pengenalan gambar dan kegunaannya!'
+            'desc' => 'Selamat datang di course Pengenalan Suara dalam Artificial Intelligence. Pertama-tama, mari kita cari tahu apa itu pengenalan suara dan kegunaannya!'
         ]);
         SubCourse::create([
             'course_id' => 3,
@@ -627,31 +635,138 @@ class DatabaseSeeder extends Seeder
             'next_id' => 0,
         ]);
 
-        Content::create([ //1
+        Content::create([ //41
             'course_id' => 3,
-            'sub_course_id' => 1,
+            'sub_course_id' => 15,
             'judul' => 'Pengenalan',
             'tipe_content' => 1,
             'prev_id' => 0,
-            'next_id' => 2,
+            'next_id' =>42,
         ]);
-        Content::create([ //1
+        Content::create([ //42
             'course_id' => 3,
-            'sub_course_id' => 1,
+            'sub_course_id' => 15,
             'judul' => 'Block Speech Recognition Sederhana',
             'tipe_content' => 1,
-            'prev_id' => 1,
-            'next_id' => 3,
+            'prev_id' => 41,
+            'next_id' => 43,
         ]);
 
-        Content::create([ //1
+        Content::create([ //43
             'course_id' => 3,
-            'sub_course_id' => 1,
+            'sub_course_id' => 15,
             'judul' => 'Contoh Program menggunakan Speech Recognition and Synthesis',
             'tipe_content' => 1,
-            'prev_id' => 2,
-            'next_id' => 4,
+            'prev_id' => 42,
+            'next_id' => 44,
         ]);
+        Content::create([ //44
+            'course_id' => 3,
+            'sub_course_id' => 16,
+            'judul' => 'Bagaimana Program Komentar yang diucapkan dapat Bekerja',
+            'tipe_content' => 1,
+            'prev_id' => 43,
+            'next_id' => 45,
+        ]);
+        Content::create([ //45
+            'course_id' => 3,
+            'sub_course_id' => 16,
+            'judul' => 'Contoh Proyek',
+            'tipe_content' => 1,
+            'prev_id' => 44,
+            'next_id' => 46,
+        ]);
+        Content::create([ //46
+            'course_id' => 3,
+            'sub_course_id' => 16,
+            'judul' => 'Kalimat Lebih Rumit',
+            'tipe_content' => 1,
+            'prev_id' => 45,
+            'next_id' => 47,
+        ]);
+        Content::create([ //47
+            'course_id' => 3,
+            'sub_course_id' => 16,
+            'judul' => 'Demo Tanya Jawab',
+            'tipe_content' => 1,
+            'prev_id' => 46,
+            'next_id' => 48,
+        ]);
+        Content::create([ //48
+            'course_id' => 3,
+            'sub_course_id' => 16,
+            'judul' => 'Layanan Demo!',
+            'tipe_content' => 1,
+            'prev_id' => 47,
+            'next_id' =>49,
+        ]);
+        Content::create([ //49
+            'course_id' => 3,
+            'sub_course_id' => 17,
+            'judul' => 'Keunggulan Speech Recognition',
+            'tipe_content' => 1,
+            'prev_id' => 48,
+            'next_id' => 50,
+        ]);
+        Content::create([ //50
+            'course_id' => 3,
+            'sub_course_id' => 17,
+            'judul' => 'Bahaya dari Speech Recognition',
+            'tipe_content' => 1,
+            'prev_id' => 49,
+            'next_id' => 51,
+        ]);
+        Content::create([ //51
+            'course_id' => 3,
+            'sub_course_id' => 17,
+            'judul' => 'Bagaimana Speech Recognition Bekerja',
+            'tipe_content' => 1,
+            'prev_id' => 50,
+            'next_id' => 52,
+        ]);
+        Content::create([ //52
+            'course_id' => 3,
+            'sub_course_id' => 18,
+            'judul' => 'Fitur Lengkap Blok Speech Recognition',
+            'tipe_content' => 1,
+            'prev_id' => 51,
+            'next_id' => 53,
+        ]);
+        Content::create([ //53
+            'course_id' => 3,
+            'sub_course_id' => 19,
+            'judul' => 'Ide Projek',
+            'tipe_content' => 1,
+            'prev_id' => 52,
+            'next_id' => 54,
+        ]);
+        Content::create([ //54
+            'course_id' => 3,
+            'sub_course_id' => 19,
+            'judul' => 'Tambahan Sumber',
+            'tipe_content' => 1,
+            'prev_id' => 53,
+            'next_id' => 55,
+        ]);
+        Content::create([ //55
+            'course_id' => 3,
+            'sub_course_id' => 19,
+            'judul' => 'Belajar tentang Image Input!',
+            'tipe_content' => 1,
+            'prev_id' => 54,
+            'next_id' => 56,
+        ]);
+
+    //    Quiz time
+        // Content::create([ //56
+        //     'course_id' => 3,
+        //     'sub_course_id' => 20,
+        //     'judul' => 'Quiz Time!',
+        //     'tipe_content' => 2,
+        //     'prev_id' => 55,
+        //     'next_id' => 0,
+        // ]);
+
 
 
         // END OF CONTENT CHAPTER 4 //
@@ -1745,8 +1860,7 @@ class DatabaseSeeder extends Seeder
         Material::create([
             'content_id' => 42,
             'isi' => '<p>Klik pada blok berikut, ucapkan sesuatu, lalu klik pada variabel <i>"last thing heard"</i>.Jika semuanya berjalan dengan baik, kalian akan melihat apa yang baru saja diucapkan.</p>
-            <iframe src="https://ecraft2learn.github.io/ai/snap/snap.html?project=simple%20listen%20block&editMode" scrolling="no" full_screen="true" project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml" style="width: 400px; height: 300px;"></iframe>
-                <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=simple%20listen%20block&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+                <figure class="snap-iframe" id="simple listen block" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=simple%20listen%20block&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
                     <p>Cobalah mengucapkan sesuatu, lihat hasilnya, klik blok tersebut lagi, ucapkan hal lain, dan lihat lagi.Jika kalian ingin mencoba bahasa lain, gunakan perintah <i> "set default language".</i> Jika memungkinkan, sistem akan menggunakan bahasa yang diberikan jika tidak ada bahasa atau suara eksplisit yang diberikan untuk perintah mendengarkan yang lebih canggih. Ada banyak cara untuk menentukan bahasa:</p>
                     <ul>
                     <li> Gunakan nama bahasa dalam bahasa Inggris</li>
@@ -1762,22 +1876,111 @@ class DatabaseSeeder extends Seeder
         
         Material::create([
             'content_id' => 43,
-            'isi' => `
-             <p>Program berikut menggunakan blok <i>"listen then ..."</i> untuk mengontrol <i>sprite</i> . Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
+            'isi' => '
+ <p>Program berikut menggunakan blok <i>"listen then ..."</i> untuk mengontrol <i>sprite</i> . Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
 
-    
-    <iframe src="https://ecraft2learn.github.io/ai/snap/snap.html?project=command#speech-recognition-sample-project " scrolling="no" full_screen="true" project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml" style="width: 400px; height: 300px;"></iframe>
+
     <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=command#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
     <!-- -->
     
-    <p>Ada versi layar penuh dari program ini. Program ini mendukung banyak cara untuk mengatakan kata atau frasa perintah yang sama. Program yang berbeda mengharapkan pengguna untuk mengucapkan kalimat lengkap dan mencari angka serta kata perintah ('maju' dan 'kanan') untuk merespons. Program serupa dapat ditulis untuk mengontrol perangkat fisik seperti robot atau rangkaian lampu.</p><p>Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Apa lagi yang mungkin menyenangkan untuk dicoba? Petunjuk: bagaimana dengan mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
+    <p>Ada versi layar penuh dari program ini. Program ini mendukung banyak cara untuk mengatakan kata atau frasa perintah yang sama. Program yang berbeda mengharapkan pengguna untuk mengucapkan kalimat lengkap dan mencari angka serta kata perintah (`maju` dan `kanan`) untuk merespons. Program serupa dapat ditulis untuk mengontrol perangkat fisik seperti robot atau rangkaian lampu.</p><p>Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Apa lagi yang mungkin menyenangkan untuk dicoba? Petunjuk: bagaimana dengan mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
 
     <br><br>
 
-            `,
+            ',
             'xp' => 10
         ]);
+        Material::create([
+            'content_id' => 44,
+            'isi' => '
+             <p> Jika kalian mengklik <img src="assets/panah.png" alt="">kalian akan melihat blok-blok di balik program. Jika Kalian kemudian mengklik kanan pada "speak turtle commands" dan memilih "edit", Kalian akan melihat program berikut.</p> 
+    <img src="assets/spoken-block.png" alt="" style="width: 40%;">
+    <p> Variabel "spoken" berisi apa yang baru saja dikenali. Perintah <i> if-then-else </i> bersarang pertama-tama akan menguji ucapan untuk keluar dari program, kemudian untuk gerakan maju, dan kemudian perintah berbelok. Jika tidak ada yang cocok, maka respons "tidak dimengerti" dibuat. Baik perintah berbelok maupun bergerak menyebabkan program menanyakan jumlah untuk berbelok atau bergerak. Ketika sebuah angka diucapkan, kura-kura kemudian berbelok atau bergerak menyesuaikan.</p>
 
+
+    <br>
+
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 45,
+            'isi' => '
+             <p>Program penghasil kalimat berikut dimulai dengan sebuah <i> "template" </i> kalimat acak. Program menganggap setiap kata yang diawali dengan "?" sebagai variabel yang digantikan dengan bertanya kepada pengguna untuk sesuatu. Contohnya:</p>
+    <p><i>The silly ?PLURAL-NOUN like ?ADJECTIVE bananas.</i></p>    
+    <p>Dari kalimat diatas, program meminta pengguna untuk mengucapkan <i> plural-noun </i> atau kata plural jamak dan kemudian meminta <i>adjective </i> atau kata sifat. Misalkan pengguna menjawab <i> "potatoes" </i> dan <i> "gigantic" </i>, maka program akan mengatakan</p>
+    <p><i>The silly potatoes like gigantic bananas.</i></p>
+    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=part%20of%20speech%20broadcast#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    
+   
+    
+   
+    <img src="assets/example-block.png" alt="" style="width: 50%;">
+    <p>Bagian program ini melalui kalimat kata per kata, berhenti ketika sebuah kata atau frasa dimulai dengan "?". Program berhenti setelah meminta penggantian dan kemudian memanggil perintah <i>"Broadcast speech recognition results ...".</i> Kode berikutnya merespons ketika sesuatu telah didengar dan diinterpretasikan:</p>
+    <img src="assets/example-block2.png" alt="" style="width: 50%;">
+    <p>Program tersebut mengulang apa yang didengar dan menggantikannya ke dalam daftar kata dengan menggantikan kata yang dimulai dengan "?". Contoh ini menggambarkan bagaimana menggunakan sintesis ucapan dan pengenalan untuk membuat aplikasi yang sepenuhnya verbal. Ini juga merupakan contoh program yang melintasi batas disiplin ilmu. Untuk menghasilkan kalimat yang gramatikal benar (meskipun seringkali nonsens atau lucu), diperlukan konsep-konsep tata bahasa seperti kata benda, frasa kata benda, kata kerja, kata sifat, dan kata keterangan. Masalah tentang kesepakatan jumlah dan waktu muncul secara alami. Menurut kalian bisakah program seperti ini bekerja tanpa konsep-konsep tata bahasa seperti kata benda, kata kerja, kata sifat, dll?</p>
+    <p>Sebuah program tanpa konsep tata bahasa seperti kata benda, kata kerja, atau kata sifat mungkin dapat beroperasi dalam konteks tertentu, terutama jika tujuannya adalah untuk menghasilkan hasil verbal yang tidak bergantung pada struktur gramatikal tradisional. Namun, untuk berinteraksi dengan bahasa manusia secara efektif dan menghasilkan kalimat yang dapat dimengerti dan bermakna secara umum, konsep-konsep tata bahasa sangat penting.
+        Dalam kasus seperti program contoh yang Anda tunjukkan, meskipun hasilnya mungkin terkadang tidak gramatikal secara tradisional, penggunaan kata-kata seperti <i> "plural noun" </i> atau <i> "adjective" </i> membantu dalam memberikan kerangka kerja yang diperlukan untuk mengatur informasi yang diterima dan dihasilkan secara verbal. Konsep-konsep ini membantu dalam membangun kalimat yang lebih terstruktur dan dapat dipahami, meskipun hasil akhirnya mungkin lebih bersifat kreatif atau eksperimental.</p>
+    
+    <br>
+    <!-- subjudul -->
+    
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 46,
+            'isi' => '
+
+              <p>Program berikut memperluas kalimat yang lebih rumit dengan menambahkan fitur baru. Jika program menemukan kata yang dimulai dengan "=", itu akan menggantikannya dengan respons terakhir untuk permintaan contoh kata/frasa tersebut.</p> 
+    
+
+    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=story generator#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    
+    <p>Contoh, di bawah ini terdapat cerita pendek yang memakai <i> template </i> kalimat acak</p> <p><i>This is a story about ?GIRLS-NAME. =GIRLS-NAME is ?ADJECTIVE and very ?ADJECTIVE. She travelled to ?PLACE-NAME. There she met ?BOYS-NAME who was a ?OCCUPATION in =PLACE-NAME. =GIRLS-NAME and =BOYS-NAME lived ?ADVERB ever after.</i></p>
+    <p>Apabila kita merespon dengan "Juliet", "warm", "beautiful", "Verona", "Romeo", "amateur poet", dan "barely" maka ceritanya akan menjadi seperti dibawah ini</p> <p><i>This is a story about Juliet. Juliet is warm and very beautiful. She travelled to Verona. There she met Romeo who was a amateur poet in Verona. Juliet and Romeo lived barely ever after. </i></p>   
+    <br>
+              
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 47,
+            'isi' => '
+
+            <p>Demo berikut ini mirip dengan <i> Google Assistant </i>. Demo ini meminta pengguna untuk mengatakan sesuatu dan kemudian mengirimkan kata-kata tersebut ke Wikipedia. Biasanya, ada banyak hasil yang cocok sehingga program memilih salah satunya secara acak dan mengucapkannya. </p>
+     
+    
+     
+    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Wikipedia answers#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     
+     <img src="assets/wikipediablock.png" alt="" style="width: 40%;">
+    <br>
+
+    
+
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 48,
+            'isi' => '
+    <p>Berikut ini adalah demo antarmuka ucapan yang sangat sederhana ke layanan cuaca. Program ini meminta nama kota dan mengucapkan suhu saat ini serta perkiraan cuaca. Program cuaca dapat ditingkatkan dengan berbagai cara. Misalnya, program dapat menanyakan informasi cuaca apa yang diinginkan pengguna.</p>
+    
+    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=weather#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    
+    <br><br>
+            ',
+            'xp' => 10
+        ]);
+        
+        
+        
+      
 
 
         //-----------------------Quiz---------------------//

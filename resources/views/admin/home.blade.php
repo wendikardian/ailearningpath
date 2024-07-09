@@ -63,7 +63,7 @@
                 foreach ($key->detailLearning as $key2) {
                   if ($key2->evaluationTaken) {
                     $evaluation_score += $key2->evaluationTaken->nilai;
-                    $persentase=$value->achievement->total_xp * 100 / 600;
+                    $persentase ?? ''=$value->achievement->total_xp * 100 / 600;
                   }
                 }
               }
@@ -73,8 +73,8 @@
           <td>{{ $evaluation_score }}</td>
           <td>
             <div class="card-body px-4 py-2 align-end w-full">
-              <progress class="progress w-full progress-primary" value="{{ $persentase }}" max="100"></progress>
-              <p class="justify-end px-4 pt-2">{{ round($persentase) }} % </p>
+              <progress class="progress w-full progress-primary" value="{{ $persentase ?? '' }}" max="100"></progress>
+              <p class="justify-end px-4 pt-2">{{ round($persentase ?? '') }} % </p>
             </div>
           <td><a href="/admin/detail_dashboard/<?= $value->id ?>">Detail</a></td>
         </tr>
