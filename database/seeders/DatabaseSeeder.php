@@ -264,6 +264,45 @@ class DatabaseSeeder extends Seeder
             'judul_sub' => 'Quiz',
             'desc' => 'Pada sub materi ini terdapat evaluasi belajar teman-teman dan akan mendapatkan sertifikat.'
         ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Pengenalan',
+            'desc' => 'Pada sub materi ini, teman-teman akan mempelajari pengenalan gambar dalam artificial intelligence.'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Pengenalan Gambar Sederhana',
+            'desc' => 'Pada sub materi ini, teman-teman akan mempelajari pengenalan gambar sederhana menggunakan Blok coding dan aplikasinya.'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Pengenalan Gambar Lanjutan',
+            'desc' => 'Pada sub materi ini, teman-teman akan belajar teknik lanjutan untuk pengenalan gambar hingga menggunakan API Key'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Penerapan Pengenalan Gambar',
+            'desc' => 'Pada bagian ini, teman-teman akan dikenalkan dimana pengenalan gambar digunakan dalam kehidupan sehari-hari.'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Computer Vision',
+            'desc' => 'Pada sub materi ini, teman-teman akan dikenalkan mekanisme cara kerja Computer Vision dan aplikasinya seperti Video Recognition.'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Proyek',
+            'desc' => 'Pada sub materi ini, teman-teman akan membuat proyek dengan menggunakan pengenalan gambar.'
+        ]);
+        SubCourse::create([
+            'course_id' => 4,
+            'judul_sub' => 'Quiz',
+            'desc' => 'Pada sub materi ini, teman-teman akan membuat proyek dengan menggunakan pengenalan gambar.'
+        ]);
+
+
+
+
 
 
 
@@ -767,6 +806,145 @@ class DatabaseSeeder extends Seeder
         //     'next_id' => 0,
         // ]);
 
+        Content::create([ //57
+            'id' => 57,
+            'course_id' => 4,
+            'sub_course_id' => 21,
+            'judul' => 'Pengenalan',
+            'tipe_content' => 1,
+            'prev_id' => 0,
+            'next_id' => 58,
+        ]);
+        Content::create([ //58
+            'course_id' => 4,
+            'sub_course_id' => 21,
+            'judul' => 'API yang akan dibutuhkan',
+            'tipe_content' => 1,
+            'prev_id' => 57,
+            'next_id' => 59,
+        ]);
+        
+        Content::create([ //59
+            'course_id' => 4,
+            'sub_course_id' => 22,
+            'judul' => 'Blok sederhana untuk pengenalan gambar',
+            'tipe_content' => 1,
+            'prev_id' => 58,
+            'next_id' => 60,
+        ]);
+        Content::create([ //60
+            'course_id' => 4,
+            'sub_course_id' => 22,
+            'judul' => 'Menampilkan hasil pengenalan gambar',
+            'tipe_content' => 1,
+            'prev_id' => 59,
+            'next_id' => 61,
+        ]);
+        Content::create([ //61
+            'course_id' => 4,
+            'sub_course_id' => 22,
+            'judul' => 'Contoh program yang menggabungkan pengenalan gambar dan suara',
+            'tipe_content' => 1,
+            'prev_id' => 60,
+            'next_id' => 62,
+        ]);
+        Content::create([ //62
+            'course_id' => 4,
+            'sub_course_id' => 23,
+            'judul' => 'Blok pengenalan gambar level lanjut',
+            'tipe_content' => 1,
+            'prev_id' => 61,
+            'next_id' => 63,
+        ]);
+        Content::create([ //63
+            'course_id' => 4,
+            'sub_course_id' => 23,
+            'judul' => 'Mendapatkan properti dari sebuah gambar',
+            'tipe_content' => 1,
+            'prev_id' => 62,
+            'next_id' => 64,
+        ]);
+        Content::create([ //64
+            'course_id' => 4,
+            'sub_course_id' => 23,
+            'judul' => 'Cara menyediakan API key',
+            'tipe_content' => 1,
+            'prev_id' => 63,
+            'next_id' => 65,
+        ]);
+        Content::create([ //65
+            'course_id' => 4,
+            'sub_course_id' => 24,
+            'judul' => 'Pengenalan Gambar cocoknya untuk apa ?',
+            'tipe_content' => 1,
+            'prev_id' => 64,
+            'next_id' => 66,
+        ]);
+        Content::create([ //66
+            'course_id' => 4,
+            'sub_course_id' => 24,
+            'judul' => 'Apa bahaya dari pengenalan gambar ?',
+            'tipe_content' => 1,
+            'prev_id' => 65,
+            'next_id' => 67,
+        ]);
+        Content::create([ //67
+            'course_id' => 4,
+            'sub_course_id' => 25,
+            'judul' => 'Bagaimana cara Computer Vision bekerja',
+            'tipe_content' => 1,
+            'prev_id' => 66,
+            'next_id' => 68,
+        ]);
+        Content::create([ //68
+            'course_id' => 4,
+            'sub_course_id' => 25,
+            'judul' => 'Apa itu Video Recognition Services',
+            'tipe_content' => 1,
+            'prev_id' => 67,
+            'next_id' => 69,
+        ]);
+        Content::create([ //69
+            'course_id' => 4,
+            'sub_course_id' => 26,
+            'judul' => 'Ide Proyek menggunakan pengenalan Gambar',
+            'tipe_content' => 1,
+            'prev_id' => 68,
+            'next_id' => 70,
+        ]);
+      
+        Content::create([ //70
+            'course_id' => 4,
+            'sub_course_id' => 26,
+            'judul' => 'Sumber Tambahan',
+            'tipe_content' => 1,
+            'prev_id' => 69,
+            'next_id' => 71,
+        ]);
+        Content::create([ //71
+            'course_id' => 4,
+            'sub_course_id' => 26,
+            'judul' => 'Bagaimana caranya kamu bisa mendapatkan Blok code tersebut ?',
+            'tipe_content' => 1,
+            'prev_id' => 70,    
+            'next_id' => 72,
+        ]);
+        Content::create([ //72
+            'course_id' => 4,
+            'sub_course_id' => 26,
+            'judul' => 'Mari belajar tentang Machine Learning',
+            'tipe_content' => 1,
+            'prev_id' => 71,
+            'next_id' => 73,
+        ]);
+        // Content::create([ //73
+        //     'course_id' => 4,
+        //     'sub_course_id' => 27,
+        //     'judul' => 'Quiz Time',
+        //     'tipe_content' => 2,
+        //     'prev_id' => 72,
+        //     'next_id' => 0,
+        // ]);
 
 
         // END OF CONTENT CHAPTER 4 //
@@ -1974,6 +2152,83 @@ class DatabaseSeeder extends Seeder
     <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=weather#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
     
     <br><br>
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 57,
+            'isi' => '
+    <h4 class="background-information-white" id="introduction">Pendahuluan</h4>
+<p class="background-information">
+Kamera yang terhubung ke komputer dapat melaporkan warna setiap piksel dalam gambar dan tidak banyak lagi.
+Deskripsi tentang apa yang ada di depan kamera dikembalikan ketika piksel-piksel tersebut
+dikirim ke layanan pengenalan gambar.
+Ada banyak jenis hal yang mungkin terkandung dalam deskripsi gambar.
+Dengan pengenalan suara, deskripsi adalah apa yang diucapkan, seberapa yakin sistem tersebut, dan kemungkinan alternatifnya.
+Dengan pengenalan gambar, ada banyak kemungkinan deskripsi: tag deskriptif, keterangan yang mungkin, warna dominan,
+lokasi wajah dan bagian wajah jika ada,
+dan keberadaan landmark, selebriti, entitas terkenal, dan logo.
+Teks tulisan tangan dan teks yang dipindai juga dapat dikenali.
+</p>
+
+<p class="advanced-information non-essential">
+Tantangan dalam menyediakan blok pemrograman yang ramah siswa untuk pengenalan gambar adalah
+bahwa layanan AI cloud yang berbeda melaporkan deskripsi yang berbeda dengan cara yang berbeda.
+Saat ini kami menyediakan antarmuka ke layanan pengenalan gambar yang disediakan oleh Google dan Microsoft.
+Tantangan lainnya adalah bagaimana menyediakan antarmuka yang sederhana untuk tugas-tugas sederhana
+sementara tetap mendukung penggunaan dan proyek yang lebih canggih.
+</p>
+
+<p class="societal-impact">
+Dalam beberapa tahun terakhir telah terjadi kemajuan luar biasa dalam penglihatan komputer.
+Ada sistem berkinerja tinggi untuk mengidentifikasi objek, mengenali wajah, menafsirkan sketsa,
+dan menggunakan gambar medis untuk membantu diagnosis.
+Mobil tanpa pengemudi sangat bergantung pada penglihatan komputer.
+</p>
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 58,
+            'isi' => '
+<p class="background-information">
+Chrome memiliki dukungan bawaan untuk sintesis dan pengenalan suara.
+Namun, saat ini tidak ada browser yang mendukung pengenalan gambar.
+Untuk mengakses layanan pengenalan gambar dari perusahaan seperti Google atau Microsoft,
+seseorang perlu <a href="https://github.com/ecraft2learn/ai/wiki" target="_blank">membuka akun</a>.
+Akun gratis dan menyediakan beberapa tingkat penggunaan gratis.
+Microsoft mengizinkan 5000 kueri per bulan, dan Google 1000 per bulan.
+Untuk mencoba blok vision yang dijelaskan di sini, Anda membutuhkan setidaknya satu akun.
+Membandingkan dan mempertentangkan hasil dari berbagai layanan adalah cara yang menarik
+untuk mendapatkan wawasan tentang bagaimana layanan ini bekerja.
+</p>
+
+<p class="background-information">
+Dalam proyek, ada cara berbeda untuk menyediakan kunci ke Snap!
+(seperti dijelaskan <a href="#api-keys-in-snap">di sini</a>) tetapi dalam bab ini Anda dapat menempelkan kunci atau kunci Anda di bawah ini
+dan kunci tersebut hanya akan dikirimkan ke layanan saat Anda menggunakan contoh blok.
+Jika tidak, mereka tetap berada di tab browser Anda.
+<br><label>Salin dan tempel kunci Google Anda di sini:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Google image key" type="text" style="width:24em;"></label>
+<br><label>Salin dan tempel kunci Microsoft Anda di sini:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Microsoft image key" type="text" style="width:24em;"></label>
+</p>
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 59,
+            'isi' => '
+<p class="instructions">
+Blok ini mengambil gambar, mengirimkannya ke penyedia server cloud AI vision, menunggu respons, dan kemudian
+melaporkan daftar label dari foto tersebut.
+Daftar tersebut diurutkan berdasarkan seberapa yakin penyedia vision bahwa label tersebut sesuai dengan gambar.
+</p>
+<figure class = "snap-iframe"
+        id = "image labels reporter"
+        stage_ratio = "0.25"
+        container_style = "width: 800px; height: 350px" 
+        caption = "Blok untuk melaporkan label yang menjelaskan apa yang ditampilkan oleh kamera. COBAKAN">
+</figure>
             ',
             'xp' => 10
         ]);
