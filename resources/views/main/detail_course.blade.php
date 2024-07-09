@@ -39,7 +39,7 @@
         @endauth
 
     </div>
-    <div><img class="object-contain h-full" src="/res/img/ss-thumb.png" alt=""></div>
+    <div><img class="object-contain h-full" src="{{ $detail_course->thumb }}" alt=""></div>
   </div>
   <div class="grid grid-cols-2 p-6">
     <div>

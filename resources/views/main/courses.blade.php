@@ -18,7 +18,7 @@
 
     <div class="grid grid-cols-3 justify-items-center">
       @foreach ($courses as $course)
-      <div class="flex flex-col w-72 px-4 pt-2 pb-4 bg-base-100 rounded-2xl shadow-xl space-y-3">
+      <div class="flex flex-col w-72 px-4 pt-2 pb-4 bg-base-100 rounded-2xl shadow-xl space-y-3 my-4">
         <img class="object-scale-down w-32" src="{{ $course->icon }}" alt="courses"/>
         <p class="text-xs text-orange-400">{{ $course->author }}</p>
         <p class="text-lg font-semibold">{{ $course->judul }}</p> 

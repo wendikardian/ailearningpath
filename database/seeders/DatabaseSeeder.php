@@ -34,6 +34,13 @@ class DatabaseSeeder extends Seeder
             'status' => 1
 
         ]);
+        // User::create([
+        //     'email' => 'wendikardian@gmail.com',
+        //     'name' => 'Wendi',
+        //     'is_admin' => 1,
+        //     'password' => Hash::make('wendikardian'),
+        //     'status' => 1
+        // ]);
 
         Course::create([
             'judul' => 'Speech Synthesis dalam Artificial Intelegence',
@@ -54,19 +61,42 @@ class DatabaseSeeder extends Seeder
             'thumb' => '/res/img/ml-thumb.png',
             'icon' => '/res/img/ml-icon.png'
         ]);
-        /*
+
+
         Course::create([
-            'judul' => 'Speech Recognition dalam Artificial Intelegence',
+            'judul' => 'Speech Recognition dalam Artificial Intelligence',
             'desc' => 'Belajar Artificial Intelligence untuk membuat produk AI dengan Speech Recognition dengan mudah dan menyenangkan.',
             'author' => 'Ken Kahn, University Of Oxford',
             'requirement' => '<ul class="list-inside list-disc leading-relaxed"><li>Personal Computer (PC) atau Laptop </li> <li>Internet</li> <li>Speaker dan Microphone / Earphone</li></ul>',
-            'ratings' => 5.0,
+            'ratings' => 4.9,
             'thumb' => '/res/img/sr-thumb.png',
             'icon' => '/res/img/icon-sr.png'
         ]);
-*/
+        Course::create([
+            'judul' => 'Pengenalan Gambar dalam Artificial Intelligence',
+            'desc' => 'Belajar Artificial Intelligence untuk membuat produk AI dengan Pengenalan Gambar dengan mudah dan menyenangkan.',
+            'author' => 'Ken Kahn, University Of Oxford',
+            'requirement' => '<ul class="list-inside list-disc leading-relaxed"><li>Personal Computer (PC) atau Laptop </li> <li>Internet</li> <li>Speaker dan Microphone / Earphone</li></ul>',
+            'ratings' => 5.0,
+            'thumb' => '/res/img/ir-thumb.png',
+            'icon' => '/res/img/icon-ir.png'
+        ]);
+        // Menggunakan kata dan kalimat
+        Course::create([
+            'judul' => 'Menggunakan Kata dan Kalimat dalam Artificial Intelligence',
+            'desc' => 'Belajar Artificial Intelligence untuk membuat produk AI dengan menggunakan kata dan kalimat dengan mudah dan menyenangkan (Pemrosesan Bahasa Alami).',
+            'author' => 'Ken Kahn, University Of Oxford',
+            'requirement' => '<ul class="list-inside list-disc leading-relaxed"><li>Personal Computer (PC) atau Laptop </li> <li>Internet</li> <li>Speaker dan Microphone / Earphone</li></ul>',
+            'ratings' => 5.0,
+            'thumb' => '/res/img/nlp-thumb.png',
+            'icon' => '/res/img/icon-nlp.png'
+        ]);
 
-/* ============ Course 1 ============ */
+
+
+
+
+        /* ============ Course 1 ============ */
         SubCourse::create([ //1
             'course_id' => 1,
             'judul_sub' => 'Pendahuluan',
@@ -103,7 +133,7 @@ class DatabaseSeeder extends Seeder
             'desc' => 'Pada sub materi ini terdapat evaluasi belajar teman-teman dan akan mendapatkan sertifikat.'
         ]);
 
-/* ============ Course 2 ============ */
+        /* ============ Course 2 ============ */
         SubCourse::create([ //7
             'course_id' => 2,
             'judul_sub' => 'Pendahuluan',
@@ -151,7 +181,7 @@ class DatabaseSeeder extends Seeder
             'judul_sub' => 'Penutup',
             'desc' => 'Pada sub materi ini terdapat evaluasi belajar teman-teman dan akan mendapatkan sertifikat.'
         ]);
-        
+
         /*
         SubCourse::create([ //7
             'course_id' => 2,
@@ -195,6 +225,44 @@ class DatabaseSeeder extends Seeder
             'desc' => 'Pada sub materi ini terdapat evaluasi belajar teman-teman dan akan mendapatkan sertifikat.'
         ]);
 */
+        // Course pengenalan gambar
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Pendahuluan',
+            'desc' => 'Selamat datang di course Pengenalan Gambar dalam Artificial Intelligence. Pertama-tama, mari kita cari tahu apa itu pengenalan gambar dan kegunaannya!'
+        ]);
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Bagaimana Program Komentar yang Diucapkan Bekerja',
+            'desc' => 'Pada sub materi ini kita akan mempelajari bagaimana program komentar yang diucapkan bekerja.'
+        ]);
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Keunggulan dari Speech Recognition',
+            'desc' => 'Pada sub materi ini kita akan mempelajari keunggulan dari speech recognition.'
+        ]);
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Fitur Lengkap Blok Speech Recognition',
+            'desc' => 'Pada sub materi ini akan diperjelas lebih dalam fitur lengkap yang dimiliki oleh blok Speech Recognition.'
+        ]);
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Proyek',
+            'desc' => 'Pada sub materi ini teman-teman akan membuat proyek dengan menggunakan pengenalan gambar.'
+        ]);
+        SubCourse::create([
+            'course_id' => 3,
+            'judul_sub' => 'Quiz',
+            'desc' => 'Pada sub materi ini terdapat evaluasi belajar teman-teman dan akan mendapatkan sertifikat.'
+        ]);
+
+
+
+
+
+
+
         //-----------------------CONTENT SS---------------------//
 
         Content::create([ //1
@@ -558,6 +626,33 @@ class DatabaseSeeder extends Seeder
             'prev_id' => 39,
             'next_id' => 0,
         ]);
+
+        Content::create([ //1
+            'course_id' => 3,
+            'sub_course_id' => 1,
+            'judul' => 'Pengenalan',
+            'tipe_content' => 1,
+            'prev_id' => 0,
+            'next_id' => 2,
+        ]);
+        Content::create([ //1
+            'course_id' => 3,
+            'sub_course_id' => 1,
+            'judul' => 'Block Speech Recognition Sederhana',
+            'tipe_content' => 1,
+            'prev_id' => 1,
+            'next_id' => 3,
+        ]);
+
+        Content::create([ //1
+            'course_id' => 3,
+            'sub_course_id' => 1,
+            'judul' => 'Contoh Program menggunakan Speech Recognition and Synthesis',
+            'tipe_content' => 1,
+            'prev_id' => 2,
+            'next_id' => 4,
+        ]);
+
 
         // END OF CONTENT CHAPTER 4 //
 
@@ -1639,6 +1734,51 @@ class DatabaseSeeder extends Seeder
             'xp' => 10
         ]);
 */
+        Material::create([
+            'content_id' => 41,
+            'isi' => ' <p>Apakah kalian tahu, lebih mudah bagi komputer untuk memulai pekerjaan dengan mengandalkan teks dan menghasilkan ucapan daripada memulai dengan ucapan dan menghasilkan teks yang sesuai? Hal ini karena biasanya lebih mudah bagi komputer untuk menghasilkan sesuatu daripada mengenalinya.</p>
+            <p>Ucapan maupun suara lainnya dapat menyebabkan getaran di udara yang menyebabkan getaran di mikrofon komputer kemudian getaran ini diubah menjadi angka. Dari angka-angka tersebutlah program mulai menentukan apa yang dikatakan. Namun perlu kita ketahui proses ini tidak sempurna dan tentunya kesalahan dapat terjadi. </p>
+            <br>
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 42,
+            'isi' => '<p>Klik pada blok berikut, ucapkan sesuatu, lalu klik pada variabel <i>"last thing heard"</i>.Jika semuanya berjalan dengan baik, kalian akan melihat apa yang baru saja diucapkan.</p>
+            <iframe src="https://ecraft2learn.github.io/ai/snap/snap.html?project=simple%20listen%20block&editMode" scrolling="no" full_screen="true" project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml" style="width: 400px; height: 300px;"></iframe>
+                <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=simple%20listen%20block&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+                    <p>Cobalah mengucapkan sesuatu, lihat hasilnya, klik blok tersebut lagi, ucapkan hal lain, dan lihat lagi.Jika kalian ingin mencoba bahasa lain, gunakan perintah <i> "set default language".</i> Jika memungkinkan, sistem akan menggunakan bahasa yang diberikan jika tidak ada bahasa atau suara eksplisit yang diberikan untuk perintah mendengarkan yang lebih canggih. Ada banyak cara untuk menentukan bahasa:</p>
+                    <ul>
+                    <li> Gunakan nama bahasa dalam bahasa Inggris</li>
+                    <li> Gunakan nama bahasa dalam bahasa tersebut</li>
+                    <li> Berikan kode bahasa diikuti dengan kode dialek.</li>
+                    
+                    </ul>
+                    <br>
+
+            ',
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 43,
+            'isi' => `
+             <p>Program berikut menggunakan blok <i>"listen then ..."</i> untuk mengontrol <i>sprite</i> . Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
+
+    
+    <iframe src="https://ecraft2learn.github.io/ai/snap/snap.html?project=command#speech-recognition-sample-project " scrolling="no" full_screen="true" project_path="https://ecraft2learn.github.io/ai/projects/story generator.xml" style="width: 400px; height: 300px;"></iframe>
+    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=command#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <!-- -->
+    
+    <p>Ada versi layar penuh dari program ini. Program ini mendukung banyak cara untuk mengatakan kata atau frasa perintah yang sama. Program yang berbeda mengharapkan pengguna untuk mengucapkan kalimat lengkap dan mencari angka serta kata perintah ('maju' dan 'kanan') untuk merespons. Program serupa dapat ditulis untuk mengontrol perangkat fisik seperti robot atau rangkaian lampu.</p><p>Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Apa lagi yang mungkin menyenangkan untuk dicoba? Petunjuk: bagaimana dengan mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
+
+    <br><br>
+
+            `,
+            'xp' => 10
+        ]);
+
+
 
         //-----------------------Quiz---------------------//
 
