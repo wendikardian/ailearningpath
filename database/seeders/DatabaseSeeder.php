@@ -2429,6 +2429,7 @@ class DatabaseSeeder extends Seeder
         Material::create([
             'content_id' => 41,
             'isi' => '<p>Perlu kita ketahui, lebih mudah bagi komputer untuk memulai pekerjaan dengan teks dan menghasilkan ucapan daripada memulai dengan ucapan dan menghasilkan teks yang sesuai. Karena biasanya, bagi komputer lebih mudah untuk menghasilkan sesuatu (contohnya: menghasilkan/menampilkan teks, gambar dan lainnya) daripada mengenali atau memindai sesuatu.</p>
+            <img class="img-materials" src="https://imageio.forbes.com/specials-images/imageserve/61c4dab3dcce70ad2cdf606a/voice-recognition-with-smart-phone/960x0.jpg?format=jpg&width=960" alt="Image Recognition" width="300" >
     <p>Ucapan maupun suara lainnya dapat menyebabkan getaran di udara yang menyebabkan getaran di mikrofon komputer. Kemudian getaran ini diubah menjadi angka. Inilah yang kita sebut dengan pengenalan ucapan/suara atau <b><i>Speech Recognition.</i></b> <i>Speech Recognition</i> akan mendeteksi suara dari ucapan dan menerjemahkannya dengan angka-angka kemudian mencoba menentukan apa yang dikatakan. Namun perlu kita ketahui proses ini tidak sempurna dan tentunya kesalahan dapat terjadi.
 </p>
     <br>
@@ -2534,7 +2535,8 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
 <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=story%20generator" class="font-bold text-primary" target="_blank">klik disini!</a></p>
      
     <p>Contoh, di bawah ini terdapat cerita pendek yang memakai <i> template </i> kalimat acak</p> <p class="box-highlight"><i>This is a story about ?GIRLS-NAME. =GIRLS-NAME is ?ADJECTIVE and very ?ADJECTIVE. She travelled to ?PLACE-NAME. There she met ?BOYS-NAME who was a ?OCCUPATION in =PLACE-NAME. =GIRLS-NAME and =BOYS-NAME lived ?ADVERB ever after.</i></p>
-    <p>Apabila kita merespon dengan <span class="highlight-word" > "Juliet", "warm", "beautiful", "Verona", "Romeo", "amateur poet", dan "barely"</span > maka ceritanya akan menjadi seperti dibawah ini</p> <p class="box-highlight"><i>This is a story about Juliet. Juliet is warm and very beautiful. She travelled to Verona. There she met Romeo who was a amateur poet in Verona. Juliet and Romeo lived barely ever after. </i></p>   
+    <p>Apabila kita merespon dengan <span class="highlight-word" > "Juliet", "warm", "beautiful", "Verona", "Romeo", "amateur poet", dan "barely"</span > maka ceritanya akan menjadi seperti dibawah ini</p> <p class="box-highlight"><i>This is a story about Juliet. Juliet is warm and very beautiful. She travelled to Verona. There she met Romeo who was a amateur poet in Verona. Juliet and Romeo lived barely ever after. </i></p>  
+    <img class="img-materials" src="https://miro.medium.com/v2/resize:fit:1280/0*oreyBvL73mL_4O00.jpg" alt="Image Recognition" width="300" > 
     <br>
               
             ',
@@ -2546,7 +2548,7 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
             'isi' => '
 
          <p>Demo berikut ini mirip dengan <i class="highlight-word"> Google Assistant </i>. Demo ini meminta pengguna untuk mengatakan sesuatu dan kemudian mengirimkan kata-kata tersebut ke Wikipedia. Biasanya, ada banyak hasil yang cocok sehingga program memilih salah satunya secara acak dan mengucapkannya. </p>
-     
+     <img class="img-materials" src="https://i0.wp.com/diengcyber.com/wp-content/uploads/2022/06/GAMBAR-3-4.jpg?fit=1280%2C720&ssl=1" alt="Image Recognition" width="300" >
  
     <figure class = "snap-iframe"
         id = "Wikipedia answers"
@@ -2569,6 +2571,8 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
             'content_id' => 48,
             'isi' => '
     <p>Berikut ini adalah demo antarmuka ucapan yang sangat sederhana ke <span class="highlight-word"> layanan cuaca </span>. Program ini meminta nama kota dan mengucapkan suhu saat ini serta perkiraan cuaca. Program cuaca dapat ditingkatkan dengan berbagai cara. Misalnya, program dapat menanyakan informasi cuaca apa yang diinginkan pengguna.</p>
+
+    <img class="img-materials" src="https://play-lh.googleusercontent.com/GdXjVGXQ90eVNpb1VoXWGT3pff2M9oe3yDdYGIsde7W9h3s2S6FDLfo1uO-gljBZ1QXO" alt="Image Recognition" width="300" >
     
     <figure class = "snap-iframe"
         id = "weather"
@@ -2586,7 +2590,8 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
         Material::create([
             'content_id' => 49,
             'isi' => '
-     <p><i class="highlight-word">Speech Recognition</i> dapat digunakan untuk mentranskrip ucapan yang diucapkan. Mereka yang tidak dapat mengetik atau menulis dapat menggunakannya untuk berkomunikasi secara tekstual dan menghasilkan catatan serta laporan. Ada banyak konteks khusus di mana teknologi ini sangat berguna. Misalnya, dokter dapat menghasilkan transkrip percakapan dengan pasien mereka, yang dapat meningkatkan catatan medis pasien. Transkripsi otomatis memungkinkan pencarian teks dalam video dan pembuatan caption untuk video. Dipadukan dengan terjemahan, <i>Speech Recognition</i> dapat memberikan input ke layanan terjemahan dan hasilnya dapat diubah menjadi ucapan dalam bahasa lain.</p><p>Penggunaan lain dari <i>Speech Recognition</i> adalah sebagai antarmuka ke komputer atau artefak digital. Aplikasi atau robot dapat dibuat untuk menerima perintah verbal. Ini sangat memberdayakan bagi orang-orang dengan disabilitas yang tidak dapat melakukan tugas-tugas tersebut sendiri. Asisten seperti <span class="highlight-word">Siri</span> dapat memberikan respons yang berguna terhadap pertanyaan yang diucapkan. Input dan output verbal dapat menjadi cara teraman untuk berkomunikasi dalam beberapa situasi seperti saat mengemudi atau memandu pesawat.</p>        
+     <p><i class="highlight-word">Speech Recognition</i> dapat digunakan untuk mentranskrip ucapan yang diucapkan. Mereka yang tidak dapat mengetik atau menulis dapat menggunakannya untuk berkomunikasi secara tekstual dan menghasilkan catatan serta laporan. Ada banyak konteks khusus di mana teknologi ini sangat berguna. Misalnya, dokter dapat menghasilkan transkrip percakapan dengan pasien mereka, yang dapat meningkatkan catatan medis pasien. Transkripsi otomatis memungkinkan pencarian teks dalam video dan pembuatan caption untuk video. Dipadukan dengan terjemahan, <i>Speech Recognition</i> dapat memberikan input ke layanan terjemahan dan hasilnya dapat diubah menjadi ucapan dalam bahasa lain.</p><p>Penggunaan lain dari <i>Speech Recognition</i> adalah sebagai antarmuka ke komputer atau artefak digital. Aplikasi atau robot dapat dibuat untuk menerima perintah verbal. Ini sangat memberdayakan bagi orang-orang dengan disabilitas yang tidak dapat melakukan tugas-tugas tersebut sendiri. Asisten seperti <span class="highlight-word">Siri</span> dapat memberikan respons yang berguna terhadap pertanyaan yang diucapkan. Input dan output verbal dapat menjadi cara teraman untuk berkomunikasi dalam beberapa situasi seperti saat mengemudi atau memandu pesawat.</p>   
+     <img class="img-materials" src="https://www.apple.com/v/siri/h/images/meta/siri__fsb5b98qe526_og.png?202406092055" alt="Image Recognition" width="300" >     
     <br>
             ',
             'xp' => 10
@@ -2595,6 +2600,8 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
             'content_id' => 50,
             'isi' => '
     <p>Seperti banyak teknologi lainnya, <span class="highlight-word"><i>Speech Recognition</i> tentunya dapat disalahgunakan</span>. Bisa saja digunakan untuk memata-matai populasi secara luas. Contoh lainnya adalah layanan yang membutuhkan interaksi verbal antar manusia nantinya bisa saja digantikan dengan Speech Recognition, padahal tidak memiliki empati ataupun perasaan layaknya interaksi antar manusia Penggunaan robot pendamping untuk memberikan dukungan sosial saat ini menjadi kontroversial karena robot tersebut mungkin kurang pemahaman dan empati. Teknologi ucapan telah menjadi bagian dari mainan interaktif dan beberapa berpendapat bahwa anak-anak menjadi terlalu terikat secara emosional pada mereka.</p>
+<img class="img-materials" src="https://static.scientificamerican.com/sciam/cache/file/DAE77085-C74B-4726-8AF075DAAE343F90_source.jpg" alt="Image Recognition" width="300" >     
+
     <p class="box-highlight">Apakah menurut kalian manfaatnya lebih besar daripada bahayanya? Apakah ada cara untuk menghindari bahaya tersebut?</p>
     <br>
             ',
@@ -2606,6 +2613,10 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
      <p>Dimulai dengan <span class="highlight-word">mikrofon yang mengubah getaran di udara (yaitu, suara) menjadi angka (menggunakan sesuatu yang disebut konverter analog-ke-digital) </span>. Suara yang didigitalkan dipecah menjadi segmen pendek (seperseratus atau seperseribu detik panjangnya) dan dimasukkan ke dalam mesin pengenalan. Saat ini, yang terbaik mengandalkan jaringan saraf / <i>neural network </i>. Program statistik yang kompleks juga sering digunakan.</p><p>Ada banyak tantangan termasuk berbagai jenis suara, dialek, dan aksen yang mungkin dihadapi oleh mesin <i>Speech Recognition.</i> Seringkali ada suara latar belakang yang perlu dihilangkan dari sinyal.</p><br>
     <p>Tantangan lainnya berasal dari <span class="highlight-word">kompleksitas bahasa manusia </span>. Ada banyak kata yang merupakan homonim, kata-kata berbeda yang terdengar sama. Memisahkan ucapan menjadi kata-kata yang terpisah itu sulit.</p>
     <br>
+
+<img class="img-materials" src="https://www.mathworks.com/help/examples/deeplearning_shared/win64/VADInNoiseUsingDeepLearningExample_01.png" alt="Image Recognition" width="300" >     
+<br>
+
     <p class="box-highlight"> Contoh klasik adalah bagaimana <i> "recognise speech" </i> terdengar sangat mirip dengan <i> "wreck a nice beach". </i></p> <br><p>Saat menggunakan blok dan program contoh dalam bab ini, kita sering kali akan menemui kesalahan. Ini terkadang menggelikan, terutama ketika menyebabkan program melakukan sesuatu yang konyol. Untuk aplikasi di mana kesalahan komputer dapat menyebabkan masalah serius, antarmuka dapat dibuat sehingga meminta konfirmasi sebelum melanjutkan. Menarik untuk membandingkan kesalahan <i>Speech Recognition</i> dengan jenis dan frekuensi kesalahan yang dilakukan manusia saat mendengarkan ucapan.</p>
     <br>
 
@@ -2613,66 +2624,115 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
             ',
             'xp' => 10
         ]);
+        Material::create([
+            'content_id' => 52,
+            'isi' => '
+<p> Mesin <i>Speech Recognition</i> umumnya dapat melakukan lebih dari blok dasar <i> "listen then ..." </i>yang dijelaskan di atas. Kalian dapat menentukan bahasa yang diharapkan. Mesin dapat melaporkan hasil interim dan hasil alternatif. Ini juga dapat memberikan nilai <span class="highlight-word">"kepercayaan" atau <i>confidence </i></span> yang menunjukkan seberapa yakinnya mesin bahwa <i>Speech Recognition</i>dilakukan dengan benar. Semua fungsionalitas ini disediakan oleh blok ini:</p><p style="color: red;">
+<figure class = "snap-iframe non-essential"
+    id = "complex listen block"
+    stage_ratio = ".75"
+    container_style = "width: 1100px; height: 440px" 
+    >
+    <p>Argumen untuk blok ini adalah sebagai berikut (semua dapat dikosongkan):</p>
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=complex%20listen%20block&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <ol>
+        <li>1. Blok yang menerima hasil interim saat mereka diproduksi.</li>
+        <li>2. Blok yang menerima hasil akhir.</li>
+        <li>3. Blok yang menerima kesalahan jika ada.</li>
+        <li>4. Nama bahasa (dalam bahasa Inggris atau dalam bahasa itu sendiri) atau tag bahasa IETF. </li>
+        <li>5. Jumlah maksimum hasil pengenalan alternatif. Jika tidak diberikan, biasanya nilainya adalah 1, meskipun mesin pengenalan dapat mengembalikan lebih sedikit hasil.</li>
+        <li>6. Blok yang menerima daftar hasil pengenalan alternatif.</li>
+        <li>7. Blok yang menerima daftar nilai kepercayaan yang sesuai dengan hasil pengenalan alternatif. Nilai 0 berarti tidak ada kepercayaan, sedangkan nilai 1 adalah kepercayaan tertinggi.</li>
+    </ol>
+    <p class="box-highlight">Sebagai contoh, jika Anda mengatakan <i> "red" </i>, Anda akan melihat <i> "red" </i>, tetapi jika segera setelahnya Anda mengatakan "a book", Anda akan melihat <i> "red" </i> menjadi <i> "read a book".</i> Anda dapat melihat fenomena yang sama pada demo Google ini.</p>
+    <br>
+
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 53,
+            'isi' => '
+    <p>Berikut adalah beberapa ide proyek menggunakan <i>Speech Recognition</i> <i>(Speech Synthesis and Recognition):</i></p>
+    <ul>
+        <li>1. <span class="highlight-word">Kontrol Robot: </span> Membuat robot yang merespons perintah seperti <i> "forward", "left", "right", </i> dan <i> "stop" </i></li>
+        <li>2. <span class="highlight-word">Chatbot: </span>Mengembangkan chatbot yang dapat berbicara tentang topik tertentu, dengan menggunakan ucapan sebagai metode inputnya.</li>
+        <li>3. <span class="highlight-word">Permainan Petualangan: </span>Mengadaptasi permainan petualangan berbasis teks menjadi program verbal di mana pemain dapat menavigasi dunia virtual dengan mengatakan perintah seperti "jalan ke utara" atau "buka pintu". </li>
+        <li>4. <span class="highlight-word">Permainan Tebak-tebakan: </span>Implementasi permainan di mana komputer menebak sebuah angka atau pemain menebak angka, dengan umpan balik seperti "lebih dekat" atau "lebih jauh".</li>
+        <li>5. <span class="highlight-word">Seni Interaktif: </span>Membuat karya seni interaktif yang merespons berbeda tergantung pada apakah mereka mendengar sesuatu yang positif atau negatif, dengan menggunakan deteksi kata kunci atau analisis sentimen.</li>
+        <li>6. <span class="highlight-word">Integrasi Aplikasi Ucapan: </span>Menggabungkan dua aplikasi ucapan di mana satu aplikasi memproses ucapan untuk bagian-bagian ucapan (seperti kata benda, kata kerja) dan aplikasi lainnya merespons berdasarkan bagian-bagian ini.</li>
+    </ul>
+    <p>diatas hanyalah beberapa ide projek yang dapat kalian bangun. Masih ada banyak aplikasi dan proyek lain yang mungkin dengan teknologi <i>Speech Recognition</i>.</p>
+    <br>
+
+
+    <br><br>
+
+
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 54,
+            'isi' => '
+       <p class="my-2 text-center"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition" class="font-bold text-primary" target="_blank">Dokumentasi <i>Speech Recognition</i></a> adalah deskripsi yang sangat lengkap tentang fitur <i>Speech Recognition</i> yang seharusnya didukung oleh browser (Chrome dan Edge saat ini adalah browser tersebut tetapi pengembang browser lainnya juga sedang mengembangkannya).</p>
+    <p class="my-2 text-center"><a href="https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition.htm" class="font-bold text-primary" target="_blank"><i> How Stuff Works</i></a> memberikan penjelasan yang jelas tentang bagaimana sistem <i>Speech Recognition</i> bekerja dan apa tantangannya.</p>
+    <p class="my-2 text-center"><a href="https://en.wikipedia.org/wiki/Speech_recognition" class="font-bold text-primary" target="_blank">Wikipedia</a> juga dapat dijadikan sumber karena mencakup topik ini dengan baik</p>
+    <p class="my-2 text-center"><a href="https://ora.ox.ac.uk/objects/uuid:12124254-acce-4c11-a540-19e74530798d" class="font-bold text-primary" target="_blank">Antarmuka Pemrograman Ramah Anak untuk Layanan AI Cloud</a> adalah makalah yang membahas blok sintesis dan <i>Speech Recognition Snap!</i></p>
+    <br>
 
 
 
+            ',
+            'xp' => 10
+        ]);
+        
 
+
+
+        
+        Material::create([
+            'content_id' => 55,
+            'isi' => '
+        <p> Ayo kita belajar course lainnya, yaitu <i class="highlight-word">Image Recognition</i></p>
+            <img class="img-materials" src="https://epe.brightspotcdn.com/dims4/default/3440acf/2147483647/strip/true/crop/1695x1150+13+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2F53%2Fc9%2F8a96a2eb465e89e9d18fa364a671%2F102023-lead-image-facial-recognition-gt.jpg" alt="Image Recognition" width="300" >
+    
+        <br><br><br>
+
+
+            ',
+            'xp' => 10
+        ]);
+
+
+
+        
         Material::create([
             'content_id' => 57,
             'isi' => '
-    <h4 class="background-information-white" id="introduction">Pendahuluan</h4>
-<p class="background-information">
-Kamera yang terhubung ke komputer dapat melaporkan warna setiap piksel dalam gambar dan tidak banyak lagi.
-Deskripsi tentang apa yang ada di depan kamera dikembalikan ketika piksel-piksel tersebut
-dikirim ke layanan pengenalan gambar.
-Ada banyak jenis hal yang mungkin terkandung dalam deskripsi gambar.
-Dengan pengenalan suara, deskripsi adalah apa yang diucapkan, seberapa yakin sistem tersebut, dan kemungkinan alternatifnya.
-Dengan pengenalan gambar, ada banyak kemungkinan deskripsi: tag deskriptif, keterangan yang mungkin, warna dominan,
-lokasi wajah dan bagian wajah jika ada,
-dan keberadaan landmark, selebriti, entitas terkenal, dan logo.
-Teks tulisan tangan dan teks yang dipindai juga dapat dikenali.
-</p>
-
-<p class="advanced-information non-essential">
-Tantangan dalam menyediakan blok pemrograman yang ramah siswa untuk pengenalan gambar adalah
-bahwa layanan AI cloud yang berbeda melaporkan deskripsi yang berbeda dengan cara yang berbeda.
-Saat ini kami menyediakan antarmuka ke layanan pengenalan gambar yang disediakan oleh Google dan Microsoft.
-Tantangan lainnya adalah bagaimana menyediakan antarmuka yang sederhana untuk tugas-tugas sederhana
-sementara tetap mendukung penggunaan dan proyek yang lebih canggih.
-</p>
-
-<p class="societal-impact">
-Dalam beberapa tahun terakhir telah terjadi kemajuan luar biasa dalam penglihatan komputer.
-Ada sistem berkinerja tinggi untuk mengidentifikasi objek, mengenali wajah, menafsirkan sketsa,
-dan menggunakan gambar medis untuk membantu diagnosis.
-Mobil tanpa pengemudi sangat bergantung pada penglihatan komputer.
-</p>
+  <p>
+      Tahukah kamu, sebuah kamera yang terhubung ke komputer dapat mengirimkan data warna dari setiap piksel dalam sebuah gambar? Nantinya deskripsi dari data tersebut dapat dikirim ke sebuah layanan yaitu pengenalan gambar atau kita sebut
+      dengan <i><span class="highlight-word">Image Recognition </span>. Image Recognition</i> adalah kemampuan komputer untuk mengidentifikasi dan mengklasifikasi suatu deskripsi data.
+    </p>
+    <a style="display: block; text-align: center"><img src="https://i.imgur.com/Aqzbqsq.jpg" class="img-materials" style="width: 39mm; height: auto" /></a>
+    <p>Dengan <i>Image Recognition,</i> ada banyak deskripsi yang bisa dipindai: tag-tag deskriptif, caption (judul), warna dominan, lokasi wajah dan bagian-bagian wajah jika ada, entitas terkenal, teks tulisan tangan, dan logo.</p>
+    <p>
+      Dalam beberapa tahun terakhir, telah terjadi kemajuan luar biasa dalam <i class="highlight-word">Computer Vision.</i> Ada sistem kinerja tinggi untuk mengidentifikasi objek, mengenali wajah, menafsirkan sketsa, dan menggunakan gambar medis untuk membantu
+      diagnosis.
+    </p>
+    <br />
             ',
             'xp' => 10
         ]);
         Material::create([
             'content_id' => 58,
             'isi' => '
-<p class="background-information">
-Chrome memiliki dukungan bawaan untuk sintesis dan pengenalan suara.
-Namun, saat ini tidak ada browser yang mendukung pengenalan gambar.
-Untuk mengakses layanan pengenalan gambar dari perusahaan seperti Google atau Microsoft,
-seseorang perlu <a href="https://github.com/ecraft2learn/ai/wiki" target="_blank">membuka akun</a>.
-Akun gratis dan menyediakan beberapa tingkat penggunaan gratis.
-Microsoft mengizinkan 5000 kueri per bulan, dan Google 1000 per bulan.
-Untuk mencoba blok vision yang dijelaskan di sini, Anda membutuhkan setidaknya satu akun.
-Membandingkan dan mempertentangkan hasil dari berbagai layanan adalah cara yang menarik
-untuk mendapatkan wawasan tentang bagaimana layanan ini bekerja.
-</p>
-
-<p class="background-information">
-Dalam proyek, ada cara berbeda untuk menyediakan kunci ke Snap!
-(seperti dijelaskan <a href="#api-keys-in-snap">di sini</a>) tetapi dalam bab ini Anda dapat menempelkan kunci atau kunci Anda di bawah ini
-dan kunci tersebut hanya akan dikirimkan ke layanan saat Anda menggunakan contoh blok.
-Jika tidak, mereka tetap berada di tab browser Anda.
-<br><label>Salin dan tempel kunci Google Anda di sini:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Google image key" type="text" style="width:24em;"></label>
-<br><label>Salin dan tempel kunci Microsoft Anda di sini:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Microsoft image key" type="text" style="width:24em;"></label>
-</p>
+    <p>
+      Untuk saat ini belum ada browser yang mendukung <i>Image Recognition.</i> Jika teman-teman menginginkan untuk mengakses layanan <i>Image Recognition</i> dari perusahaan seperti<span class="highlight-word">Google atau Microsoft</span>, kita perlu membuka akun. Akun ini
+      gratis dan menyediakan beberapa tingkat penggunaan yang tidak berbayar. Microsoft mengizinkan 5000 kueri per bulan, dan Google 1000 per bulan.
+    </p>
+    <br />
             ',
             'xp' => 10
         ]);
@@ -2681,7 +2741,7 @@ Jika tidak, mereka tetap berada di tab browser Anda.
             'content_id' => 59,
             'isi' => '
 <p class="instructions">
-Blok ini mengambil gambar, mengirimkannya ke penyedia server cloud AI vision, menunggu respons, dan kemudian
+Blok ini mengambil gambar, mengirimkannya ke penyedia server <span class="highlight-word">Cloud AI Vision</span>, menunggu respons, dan kemudian
 melaporkan daftar label dari foto tersebut.
 Daftar tersebut diurutkan berdasarkan seberapa yakin penyedia vision bahwa label tersebut sesuai dengan gambar.
 </p>
@@ -2689,9 +2749,943 @@ Daftar tersebut diurutkan berdasarkan seberapa yakin penyedia vision bahwa label
         id = "image labels reporter"
         stage_ratio = "0.25"
         container_style = "width: 800px; height: 350px" 
-        caption = "Blok untuk melaporkan label yang menjelaskan apa yang ditampilkan oleh kamera. COBAKAN">
+        >
 </figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
             ',
+
+            'xp' => 10
+        ]);
+
+        Material::create([
+            'content_id' => 60,
+            'isi' => '
+
+ <p>
+      Setelah mengetahui blok sederhana <i>Image Recognition,</i> ada juga blok <i class="highlight-word">"show current photo".</i> Blok ini akan menampilkan gambar terbaru yang dikirim ke layanan visi AI tertentu sebagai latar belakang panggung Snap!. Untuk
+      mencobanya, pertama-tama dapatkan beberapa label dari layanan visi. Anda juga dapat menggunakan blok <i>"use camera to create costume"</i> untuk mengambil gambar baru dan menambahkannya sebagai kostum ke <i>sprite</i> saat ini.
+    </p>
+<figure class = "snap-iframe"
+        id = "image labels reporter and show photo"
+        container_style = "width: 1000px; height: 550px" 
+        iframe_style = "margin-left: -790px; margin-top: 150px;"
+        >
+</figure>
+
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20labels%20reporter%20and%20show%20photo&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+ 
+
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 61,
+            'isi' => '
+<p>
+      Sebagai ilustrasi, kamu ingin melakukan percobaan dengan memberikan perintah secara lisan untuk melakukan <i>Image Recognition.</i> Kamu mengucapkan perintah seperti: "Ceritakan padaku Google apa yang kamu lihat?" dan "Apa yang kamu
+      lihat Microsoft?". Ketika mendengar salah satu kata atau seluruh kata dalam kalimat tersebut, layanan <i>Speech Recognition</i> akan mulai bekerja dan bekerja sama dengan layanan <i>Image Recognition</i> akan merespon dan mulai
+      melakukan pemindaian berdasarkan perintah yang diucapkan.
+    </p>
+    <p>Catatan: disarankan untuk mempelajari <i>Course Speech Recognition</i> agar lebih memahami bagian ini</p>
+<figure class = "snap-iframe"
+        id = "camera, listen, and speak no keys"
+        full_screen = "true"
+        container_style = "width: 800px; height: 600px" 
+        >
+</figure>
+  <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=camera,%20listen,%20and%20speak%20no%20keys#api-keys-in-snap" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 62,
+            'isi' => '
+<p>
+      <i>Image Recognition</i> dapat melakukan lebih dari hanya memberi label pada gambar. Beberapa dapat mendeteksi dan menemukan lokasi wajah, memperkirakan usia dan jenis kelamin orang tersebut, mengenali landmark dan logo, serta
+      mengenali karakter dalam teks tulisan tangan atau yang dipindai. Dalam membuat blok Snap!, layanan yang berbeda memiliki kemampuan dan struktur tanggapan yang berbeda-beda.
+    </p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 63,
+            'isi' => '
+<p>
+      Blok <i>Recognize new photo</i> mengatasi masalah ini dengan melaporkan struktur data yang menangkap seluruh respons dari layanan visi. Ini adalah daftar Snap! yang berisi daftar yang berisi lebih banyak data yang mungkin berupa teks
+      untuk label, angka untuk skor kepercayaan, dan bahkan lebih banyak daftar untuk data yang kompleks. Anda dapat mengklik dua kali ikon <img src="https://i.imgur.com/HP3NeUp.jpg" class="img-materials" /> untuk membuka daftar dalam ikon daftar untuk
+      mengeksplorasi struktur lebih dalam.
+    </p>
+    <p>
+      Blok <i class="highlight-word">"Current image property"</i> menerima argumen yang menjelaskan bagian dari struktur respons yang harus dilaporkan. Misalnya, Microsoft menawarkan keterangan yang mungkin ditemukan dengan mengikuti jalur
+      <i class="highlight-word">"description captions text".</i> Blok umum yang berguna didefinisikan yang menggunakan blok <i class="highlight-word">"Current image property"</i> secara internal untuk mendapatkan label dan skor kepercayaan label untuk masing-masing penyedia layanan
+      visi yang didukung. Perlu dicatat bahwa setelah respons diterima dari salah satu layanan AI, respons tersebut disimpan sehingga panggilan ke <i class="highlight-word">"Current image property"</i> menggunakan respons terbaru daripada meminta yang baru. Hal
+      ini karena sebuah proyek mungkin perlu mengakses beberapa bagian dari sebuah respons.
+    </p>
+    <p>
+      Setelah menjalankan blok <i class="highlight-word">"Recognize new photo"</i> Anda harus memilih penyedia cloud AI yang sama (saat ini Google atau Microsoft) saat menjalankan blok <i class="highlight-word">"Current image property".</i> Argumen kedua bisa berupa string atau daftar
+      <i>string</i> yang menentukan informasi apa yang diinginkan dari pengenalan gambar. Setiap penyedia <i>AI Cloud</i> mendukung properti gambar yang berbeda:
+    </p>
+    <ul>
+    <li class="box-highlight">Google. Mendukung properti yang berupa daftar dalam bentuk <i>[labelAnnotations description], [labelAnnotations score],</i> dan <i>[imagePropertiesAnnotation dominantColors colors].</i></li>
+    <li class="box-highlight">Microsoft. Mendukung properti yang berupa daftar dalam bentuk <i>[Categories name], [Categories score], [Description captions text], [Description tags], Faces, [Tags name],</i> dan <i>[Tags confidence].</i></li>
+    </ul>
+    <p>Ayo latihan! Kenali sebuah gambar dan kemudian gunakan blok <i class="highlight-word">Current image property</i> untuk melihat jenis deskripsi apa yang disediakan oleh layanan tersebut. Bagaimana masing-masing deskripsi ini dapat berguna?</p>
+    <figure class = "snap-iframe"
+        id = "recognize new photo"
+        container_style = "width: 800px; height: 400px" 
+        >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20new%20photo&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p>
+      Blok reporter <i class="highlight-word">"Recognize new photo"</i> diimplementasikan menggunakan blok <i class="highlight-word">"Ask &lt;provider&gt; to say what is sees".</i> Blok ini tidak menunggu respons, melainkan menjalankan blok pengguna saat respons diterima. Ini tidak
+      sepraktis "Kenali foto baru" tetapi dapat mendukung penggunaan yang lebih kompleks.
+    </p>
+    <figure class = "snap-iframe"
+        id = "recognize asynchronous"
+        container_style = "width: 800px; height: 350px" 
+        >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=recognize%20asynchronous&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        
+        Material::create([
+            'content_id' => 64,
+            'isi' => '
+                <p>Pada bagian ini, kita menggunakan <i>API Keys</i> yang disediakan di area teks di atasnya. Saat membangun proyek, ada dua cara untuk menyediakan <i>key</i> atau kunci tersebut:</p>
+    <ul>
+      <li>
+        1. Tambahkan informasi tambahan ke URL halaman. Misal menambahkan <i>&Google image key=... atau &Microsoft image key=...</i> ke URL proyek yang dibagikan akan menyediakan kunci (setelah "..." diganti dengan kunci yang sebenarnya). Kamu
+        dapat menyediakan hanya satu kunci jika Anda tidak tertarik membandingkan respons dari penyedia layanan AI yang berbeda. <i>Refresh</i> halaman setelah menambahkan kunci.
+      </li>
+      <li>
+      2. Edit satu atau kedua variabel <i class="highlight-word">global Google vision key</i> atau <i>Microsoft vision key.</i> Perhatikan bahwa variabel-variabel ini dideklarasikan sebagai sementara sehingga tidak akan disetel jika kalian menyimpan dan memuat
+      proyek.
+      </li>
+      </ul>
+      <br>
+    <p>
+      Karena semua layanan <i class="highlight-word">cloud AI</i> adalah layanan komersial yang apabila penggunaannya terhitung berat bisa menjadi mahal, sebaiknya setiap dari kita memiliki akun sendiri dan meminimalkan berbagi kunci. Namun sebenarnya Ini
+      bertentangan dengan Scratch dan Snap! Yang sangat mudah untuk berbagi proyek seseorang dengan komunitas yang lebih luas. Dengan menambahkan kunci ke URL menyelesaikan masalah ini jika seseorang berhati-hati untuk menjaga URL dengan
+      kunci tetap pribadi dan membagikan versi tanpa kunci.
+    </p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 65,
+            'isi' => '
+              <p>
+      Menurut Wikipedia, mata makhluk hidup telah berevolusi secara independen antara 50 dan 100 kali sejak hewan pertama kali muncul. Apabila kita kaitkan dengan teknologi, penglihatan komputer memungkinkan sebuah robot untuk melihat
+      dengan baik, mobil yang dapat melakukan <i>self-driving,</i> dan juga dapat menjadi bantuan untuk beberapa pekerjaan seperti dokter, polisi, pelatih olahraga, petani, militer, dan lainnya.
+    </p>
+
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 66,
+            'isi' => '
+           <p>
+      Seperti kebanyakan teknologi AI lainnya, <i>Image Recognition</i> ini mungkin akan mengambil alih banyak pekerjaan atau mengurangi privasi kita karena membuatnya jauh lebih mudah untuk melacak pergerakan dan aktivitas orang. Selain
+      itu, teknologi ini juga dapat memungkinkan pembuatan senjata yang digunakan dalam peperangan.
+    </p>
+    <p>
+      Bahaya lainnya adalah baik secara sengaja atau tidak sengaja, data yang digunakan untuk melatih sistem pembelajaran mesin mungkin mengandung bias. Berikut adalah video pendek yang bagus tentang bias dan pembelajaran mesin yang
+      diterbitkan oleh Google.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/59bMh59JQDo?si=ymohEnAUhmzcL2P1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 67,
+            'isi' => '
+                    <p>
+      Seperti yang sudah disampaikan di bagian pengenalan, <i>Image Recognition</i> dimulai dengan piksel-piksel. Setiap piksel adalah angka (untuk tingkat keabuan) atau tiga angka (untuk komponen merah, hijau, dan biru) yang sesuai dengan
+      bagian kecil dari sebuah gambar. Ada dua pendekatan utama dalam memproses gambar:
+    </p>
+    <ol>
+      <li>1. Pendekatan dengan urutan langkah-langkah pemrosesan terprogram untuk menemukan tepi, menentukan tekstur, mengidentifikasi objek, dll.</li>
+      <li>2. Pendekatan dengan sebuah <i>machine learning system</i></li>
+    </ol>
+    <p>
+      Sebagian besar kemajuan telah terjadi dengan <i class="higlight-word">Machine Learning Systems.</i> Ada banyak pekerjaan yang bisa dilakukan dengan Machine Learning. Contohnya adalah untuk beberapa pekerjaan seperti mendeteksi kanker paru-paru dari
+      sinar-X, <i>Machine Learning</i> telah melampaui kemampuan para ahli.
+    </p>
+    <a style="display: block; text-align: center"><img src="https://i.imgur.com/NcWd7ip.jpg" class="img-materials" style="width: 56mm; height: auto" /></a>
+    <p>
+      <i class="higlight-word">A neural net</i> adalah program yang terinspirasi dari bagaimana <i>neuron</i> dalam otak hewan dan manusia bekerja. Hal ini dapat dilatih untuk mengidentifikasi gambar. Pada kasus paling umum, <i>neural net</i> dilatih dengan
+      ribuan atau jutaan gambar yang sudah diberi label. Ketika diberikan gambar baru, <i>neural net</i> menghitung label-label yang paling mungkin. Beberapa tugas diskriminasi visual yang mudah dapat diatasi dengan melatih hanya seratus
+      atau kurang gambar.
+    </p>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230602113310/Neural-Networks-Architecture.png" class="img-materials" width="300" />
+    <p>
+      Pada suatu tingkat, neural net dapat mengenali elemen-elemen dalam suatu gambar. Para peneliti telah membangun perangkat lunak yang menentukan gambar mana yang menghasilkan respons terbesar dari berbagai lapisan. Alat interaktif yang
+      sangat bagus untuk menjelajahi respons berbagai bagian dari jaringan neural adalah OpenAI Microscope.
+    </p>
+    <p>
+      Pada suatu tingkat, <i>neural net</i> dapat mengenali element-element yang terdapat dalam suatu gambar. Para peneliti telah membangun perangkat lunak yang menentukan gambar mana yang menghasilkan respons terbesar dari berbagai
+      lapisan. Alat interaktif yang sangat bagus untuk menjelajahi respons berbagai bagian dari jaringan <i>neural</i> adalah <i>OpenAI Microscope.</i>
+    </p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 68,
+            'isi' => '
+                 <p>
+      Beberapa penyedia layanan AI cloud seperti Google dapat menerima saluran video dan menghasilkan label. Layanan ini juga dapat mendeteksi perubahan adegan. Layanan ini bisa mahal, namun Google akan menganalisis 1000 menit video per
+      bulan tanpa biaya. Namun perlu diketahui saat ini, belum ada blok Snap! yang mendukung input video.
+    </p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 69,
+            'isi' => '
+      <p>
+      Menambahkan <i>Image Recognition</i> ke proyek robotika dapat membuat robot berperilaku jauh lebih cerdas. Robot dapat menuju tujuan dan menghindari objek tertentu. Contoh sederhana ialah robot yang diberitahu untuk bergerak ke X
+      (misalkan X berupa "bola merah", "truk mainan", "seseorang", atau apa pun). Robot dimulai dengan mengirimkan gambar kamera saat ini untuk dikenali. Jika deskripsi yang dikembalikan cocok dengan X, maka bergerak maju beberapa langkah
+      (dengan asumsi kamera dipasang menghadap ke depan). Jika tidak, maka berputar sedikit dan coba lagi. Ulangi sampai X tercapai.
+    </p>
+    <p>Untuk proyek yang menggunakan kamera yang tidak dapat bergerak, ada banyak kemungkinan:</p>
+    <ul>
+      <li>Melakukan percakapan sederhana tentang apa yang menurutnya dilihatnya.</li>
+      <li>
+        Merespons apa yang dilihatnya. Misalnya, mengatakan "sangat lucu" ketika deskripsi mencakup kata-kata seperti "anak kucing" atau "anak anjing" tetapi mengatakan "Sangat menakutkan!" ketika deskripsi adalah mainan singa atau
+        serigala.
+      </li>
+      <li>Ketika wajah dikenali, lokasi dan lokasi bagian-bagian wajah termasuk dalam respons. Aplikasi kemudian dapat mengetahui di mana menempatkan kacamata, kumis, dll. pada gambar.</li>
+      <li>Dan ribuan kemungkinan lainnya.</li>
+    </ul>
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 70,
+            'isi' => '
+      <p>
+      <i>Google</i> dan <i>Microsoft</i> mendokumentasikan layanan visi AI mereka. Ada banyak layanan visi lainnya, lihat contohnya halaman perbandingan layanan <i>Image Recognition</i> ini. Halaman <i>Wikipedia</i> tentang visi komputer
+      sangat komprehensif. Ada banyak MOOCs tentang visi komputer dan pembelajaran mesin untuk pengenalan gambar. <i>Distill</i> adalah jurnal ilmiah yang berusaha menjelaskan secara jelas topik-topik pembelajaran mesin yang kompleks.
+      Sebuah artikel <i>Distill</i> adalah deskripsi mendalam tentang bagaimana jaringan saraf melakukan pengenalan gambar. Ringkasan untuk audiens umum dari artikel tersebut ditulis oleh New York Times. <i>Codecademy</i> memiliki wawancara
+      yang baik dengan seorang ilmuwan data tentang pembelajaran mesin.
+    </p>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 71,
+            'isi' => '
+  <p>Kamu dapat mengimpor blok-blok yang disajikan di sini sebagai sebuah proyek atau mengunduhnya sebagai perpustakaan untuk diimpor ke dalam proyek-proyek kamu.</p>
+    <b><a rel="noreferrer" target="_new" href="https://ecraft2learn.github.io/ai/snap/snap.html?project=seeing&editMode ">KLIK DISINI!!!</a></b>
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 72,
+            'isi' => '
+<p>Ayo kita belajar <i>course</i> lain yaitu <span class="highlight-word"> Machine Learning </span></p>
+<img class="img-materials" src="https://atriainnovation.com/uploads/2023/11/portada-9.jpg" alt="Machine Learning" width="300" >
+    <br />
+            ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 74,
+            'isi' => '
+               <p>Pada bagian panduan ini, cukup banyak mencakup elemen interaktif yang dapat berjalan baik di <i class="highlight-word">browser chrome</i> atau <i class="highlight-word">edge</i></p>
+               <img class="img-materials" src="https://www.debugbar.com/wp-content/uploads/2021/03/Capture.png" alt="Troubleshooting Guide" width="300" />
+    <p>Untuk mengetahui cara mengatasi masalah yang dihadapi dapat dilihat <i>troubleshooting guide</i> sebagai panduan pemecahan.</p>
+    <br>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 75,
+            'isi' => '
+
+    <p>Program AI dapat melakukan banyak hal dengan teks, termasuk :<br>
+        1. menjawab pertanyaan (penanganan penelusuran web yang lebih cerdas) <br>
+        2. merangkum teks <br>
+        3. mendeteksi sentimen teks (positif/negatif, senang/sedih, marah)<br>
+        4. penulisan teks (banyak artikel berita olahraga dan keuangan ditulis oleh komputer saat ini)<br>
+        5. menentukan struktur gramatikal suatu kalimat<br>
+        6. menerjemahkan antar bahasa<br>
+    </p>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 76,
+            'isi' => '
+<p>Meskipun komputer dapat menangani teks sebagai rangkaian karakter, teknik yang disebut penyematan kata bekerja dengan mengubah kata menjadi <span class="highlight-word">daftar angka yang panjang.</span></p>
+    <p>Angka-angka ini dapat dibuat oleh manusia, yang mana setiap angka memiliki arti seperti ukuran minimum, ukuran maksimum, atau harapan hidup rata-rata.</p>
+    <p>Kebanyakan program AI menggunakan angka-angka yang dihasilkan oleh pembelajaran mesin. Angka-angka tersebut dibuat dengan melatih model pembelajaran mesin pada miliaran kata (misalnya, semua halaman <i>wikipedia</i> dalam bahasa tertentu).</p>
+    <p>Orang-orang tidak memahami apa arti angka-angka tersebut tetapi kata-kata yang mirip memiliki angka yang sama dan kata-kata yang tidak berhubungan memiliki angka yang sangat berbeda</p> 
+    <p>Setiap angka mengukur fitur dari kata tersebut tetapi fitur tersebut masih merupakan sebuah misteri. Kata <span class="highlight-word">embeddings</span> yang digunakan dalam bab ini dibuat oleh para peneliti di  <i>researchers at Facebook</i>. Mereka melatih model pembelajaran mesin mereka dalam 157 bahasa berbeda di semua artikel <i>Wikipedia</i> dalam setiap bahasa. Meskipun masing-masing kata itu tidak cukup, mereka juga melatih model mereka pada puluhan miliar kata lagi yang ditemukan <i>crawling the web..</i> Mereka membuat tabel untuk setiap bahasa yang berisi setidaknya satu juta kata berbeda. Blok yang dijelaskan di sini menyediakan 20.000 kata paling umum untuk 15 bahasa (Cina, Inggris, Finlandia, Prancis, Jerman, Yunani, Hindi, Indonesia, Italia, Jepang, Lituania, Portugis, Sinhala, Spanyol, dan Swedia). (Tabel yang lebih besar dan lebih banyak bahasa dapat ditambahkan. Kirim permintaan ke <i>toontalk@gmail.com.</i>)</p>      
+
+    ',
+
+            'xp' => 10
+        ]);
+
+
+        Material::create([
+            'content_id' => 77,
+            'isi' => '
+ <p>Kami telah membuat Snap! blok untuk mengeksplorasi bagaimana penyematan kata dapat digunakan untuk menemukan kata-kata yang serupa, kata-kata yang berada di antara kata-kata lain, dan yang paling mengejutkan memecahkan masalah analogi kata. </p>
+ <p>Fitur blok kata akan melaporkan daftar 300 angka. Jika kolom bahasa dibiarkan kosong, bahasa <i>default</i> akan digunakan. Anda dapat menganggap angka-angka tersebut seperti menempatkan sebuah kata dalam ruang 300 dimensi. Jumlahnya disesuaikan sehingga seluruh 20.000 kata masuk ke dalam <i>hypersphere</i> 300 dimensi dengan radius 1. </p>
+ <P>Ada database dengan penyematan kata untuk satu juta kata tetapi memuat dan mencari kumpulan data sebesar itu akan sangat lambat. Fitur blok kata didasarkan pada 20.000 entri yang paling sering muncul berupa huruf kecil (tanpa kata benda) dan hanya berisi huruf (tanpa tanda baca atau angka).</P>
+<figure class = "snap-iframe"
+        id = "features of"
+        container_style = "width: 550px; height: 600px" 
+        >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=features%20of&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 78,
+            'isi' => '
+ 
+                    <p>Sebuah program dapat mencari seluruh kata untuk menemukan kata yang paling dekat dengan daftar angka. Kata yang paling dekat dengan blok reporter melakukan hal ini.    </p>
+<figure class = "snap-iframe"
+        id = "closest word to"
+        container_style = "width: 800px; height: 500px" 
+        >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=closest%20word%20to&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p>Menemukan kata yang paling dekat dengan sebuah kata. COBALAH! Kemudian coba lagi setelah mengubahnya ke bahasa yang Anda tahu.</p>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 79,
+            'isi' => '
+     <p>Anda dapat mengambil dua kata dan menghitung rata-rata ciri-cirinya dengan menjumlahkan angka-angka yang sesuai dan membagi hasilnya dengan angka2. Anda kemudian dapat menggunakan kata yang paling dekat dengan pelapor untuk menemukan kata yang paling mendekati rata-rata.</p>
+            <figure class = "snap-iframe"
+        id = "word average"
+        container_style = "width: 750px; height: 300px" 
+        ">
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=closest%20word%20to&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p>Cobalah membuat rata-rata lebih dari dua kata. Dan lihat kata apa yang paling dekat antara dua kata selain titik tengahnya.</p>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 80,
+            'isi' => '
+     <p>Salah satu hal yang paling mengejutkan tentang penyematan kata adalah dengan rumus yang tepat, seseorang dapat menyelesaikan masalah analogi kata. Misalnya, "laki-laki bagi perempuan adalah raja bagi apa?" dapat dinyatakan sebagai "raja+(wanita-pria)=x"</p>
+            <figure class = "snap-iframe"
+        id = "word analogy"
+        container_style = "width: 850px; height: 550px" 
+        ">
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=word%20analogy&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <p>Memecahkan masalah analogi kata. COBALAH! Kemudian temukan analogi lain yang berhasil.</p>
+     <p>Perhatikan bahwa "raja bagi laki-laki dan perempuan bagi apa?" dapat dinyatakan sebagai "wanita+(raja-pria)=x". Dan "raja+(wanita-pria)=x" dan "wanita+(raja-pria)=x" adalah setara namun memecahkan masalah analogi kata yang berbeda!</p>
+     <p>Penggunaan penyematan kata ini juga berfungsi untuk analogi tata bahasa. Coba pecahkan "lambat menjadi lebih lambat dan cepat menjadi apa?". Anda mungkin perlu menambahkan "cepat" sebagai pengecualian.</p>
+     <p>Kami telah menerbitkan beberapa makalah tentang penggunaan penyematan kata.Lihatlah <i>our publications</i>.</p>
+     <p>Perhatikan bahwa untuk analogi kata dalam bentuk A ke B dan C ke D, jarak antara A-B ke C-D jauh lebih kecil dibandingkan jika A, B, C, dan D hanyalah kata-kata yang dipilih secara acak. Seseorang dapat menelusuri daftar kata dengan memilih empat kata dan mengukur jarak antara perbedaan antara pasangan kata. Jika seseorang hanya menyimpannya di tempat yang jaraknya kecil, dia mungkin akan menemukan teka-teki analogi kata baru. Namun, jika seseorang melakukan ini dengan menelusuri 20.000 kata, maka 3.998.800.199.970.000 kombinasi harus dipertimbangkan. <i>project that enables one to search through a smaller set</i>.</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+
+        Material::create([
+            'content_id' => 81,
+            'isi' => '
+          <p>Jika Anda menggunakan kata yang paling dekat dengan reporter untuk mengurutkan semua kata berdasarkan jarak ke daftar fitur, ini akan memakan waktu sekitar satu hari penuh karena harus memanggil reporter sebanyak 20.000 kali. Sebagai gantinya, kami memberikan kata yang paling mirip dengan reporter (perhatikan bentuk jamaknya) yang melakukan semuanya sekaligus dalam waktu kurang dari satu detik jika perangkat memiliki <i>GPU</i> (kecuali saat pertama kali dipanggil, mungkin diperlukan waktu beberapa detik). Secara opsional, ia juga dapat melaporkan jarak sebagai kosinus.</p>  
+            <figure class = "snap-iframe"
+        id = "sort closest words"
+        container_style = "width: 900px; height: 500px" 
+       >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=sort%20closest%20words&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <P>Meskipun seseorang jarang membutuhkan 20.000 kata, mungkin menarik untuk membandingkan dua kata dengan melihat berapa banyak dari 100 atau 500 kata terdekat yang memiliki kesamaan. Pikirkan kegunaan lain dari reporter ini.</P>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 82,
+            'isi' => '
+              <P>Fitur yang paling dekat dengan daftar fitur, blok laporan fitur mana yang paling dekat dengan daftar fitur tertentu. Ini melaporkan daftar semua fitur yang terdaftar, diurutkan berdasarkan jaraknya ke fitur tertentu. Kesamaan kosinus juga dilaporkan. Blok ini berfungsi baik dengan penyematan kata, kalimat, atau gambar. Atau tabel data seperti gambar di bawah ini. Perhatikan bahwa nilainya harus berada dalam rentang yang sama. (Berat diberikan dalam jumlah ratusan kilogram karena alasan ini.)</P>
+            <figure class = "snap-iframe"
+        id = "sort closest features"
+        container_style = "width: 800px; height: 500px" 
+       >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=sort%20closest%20features&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <P>Temukan semua fitur yang paling dekat dengan daftar fitur. COBALAH!</P>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 83,
+            'isi' => '
+                  <P>Seseorang dapat menghitung <i>embedding</i> kalimat dengan merata-ratakan semua kata dalam sebuah kalimat. Namun, ada cara yang jauh lebih baik dengan menggunakan model yang dilatih untuk menangani tugas tingkat kalimat.</P>
+     <P><i>Universal Sentence Encoder</i> adalah salah satu model yang tersedia di <i>browser</i>. Para reporter mendapatkan fitur kalimat dan mendapatkan fitur kalimat menggunakan <i>Universal</i> <i>Sentence Encoder</i> ini untuk menghasilkan 512 angka untuk kalimat apa pun. (Benar-benar rangkaian kata apa pun, tidak harus berupa kalimat tata bahasa.)</P>
+    <p>Ini dapat digunakan untuk mengukur seberapa mirip dua kalimat. Mempertimbangkan</p>
+    <div class="box-highlight">
+        <ol>A.Apa kabarmu? </ol>
+        <ol>B.Berapa umurmu?</ol>
+        <ol>C.Berapa umur anda?</ol>
+        <ol>A dan B mempunyai banyak kata yang sama tetapi B dan C mempunyai arti yang mirip.</ol>
+    </div>
+    <p>Fitur mendapatkan kalimat, Blok menerima teks multi-kata dan melaporkan daftar 512 angka. Untuk membandingkan kalimat kami, menggunakan kesamaan kosinus yang biasanya bekerja lebih baik daripada jarak <i>Euclidean</i>. Menggunakan <i>arc cosinus</i> mengubah kesamaan kosinus menjadi sudut untuk kejelasan.</p>
+            <figure class = "snap-iframe"
+        id = "sentence embedding"
+        container_style = "width: 900px; height: 500px"
+            >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=sentence%20embedding&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+
+    <p>Ide penggunaan <i>embedding</i> kalimat untuk menentukan kalimat mana yang lebih dekat dengan kalimat lain dapat menjadi dasar dari sebuah permainan.</p>
+    <figure class = "snap-iframe"
+        id = "sentence game" 
+        full_screen = "true"
+        container_style = "width: 900px; height: 500px"
+        caption = "Sebuah permainan menemukan kalimat terdekat ">
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=sentence%20game&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p>Pengkodean kalimat dapat digunakan lebih dari sekadar membandingkan kalimat. Dikombinasikan dengan model pembelajaran mendalam (lihat bab tentang  <i>chapter on creating, training, and using machine learning models</i>), model tersebut dapat digunakan untuk melatih sistem guna mendeteksi sentimen, emosi, topik, dan banyak lagi.</p>    
+
+        <figure class = "snap-iframe"
+        id = "confidence guesser"
+        full_screen = "true"
+        container_style = "width: 900px; height: 500px"
+       >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=confidence%20guesser&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p>Versi layar penuh dari program ini dapat ditemukan  <i>found here</i>. Model pembelajaran mesin yang digunakan dilatih dalam <i>project</i> ini.</p>
+    <p>Alternatif fitur blok kalimat adalah yang menggunakan <i>GPT-3</i> versi kecil dari <i>OpenAI</i>. Layanan ini menyediakan penyematan nomor 1536 dan mungkin memiliki kualitas yang jauh lebih tinggi. <i>API key</i> dari <i>OpenAI</i> diperlukan. Pengguna baru mendapatkan kredit gratis sebesar $18 dan layanan ini sangat murah (satu dolar AS akan mencakup pembuatan embeddings untuk lebih dari satu juta kata).</p>
+    <img src="assets/10.png" alt="" style="width: 40%;">
+    <p>Menggunakan GPT-3 untuk menghasilkan penyematan kali</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 84,
+            'isi' => '
+                <P>Salah satu penggunaan penyematan kalimat adalah pengambilan informasi. Pertimbangkan tugas mencari Snap! manual atau panduan pemrograman AI ini. Pencocokan <i>string</i> tidak dapat memperhitungkan sinonim, cara berbeda untuk mengatakan hal yang sama, atau konvensi ejaan yang berbeda.  <i>this sample search project</i>, penyematan kalimat digunakan untuk membandingkan kueri pengguna dengan fragmen kalimat dari manual dan panduan.</P>
+    <p>Dengan features closest to list of features block fragmen terdekat ditemukan dengan sangat cepat. Penyematan semua fragmen telah dihitung sebelumnya sehingga hanya penyematan kueri pengguna yang diperlukan. Setelah fragmen terdekat telah dihitung, kita dapat kembali melakukan pencarian string karena fragmen tersebut berasal dari dokumen yang sedang dicari.</p>
+    <p>Seseorang dapat menggunakan pencarian yang ditambah AI ini saat bekerja dengan Snap! dengan mengunduh dan mengimpor pencarian panduan pemrograman AI atau Snap! pencarian manual. Mereka bekerja dengan cara yang sama dan memiliki antarmuka yang serupa. Hasilnya cenderung lebih baik jika kuerinya berupa frasa tata bahasa dan bukan pertanyaan.</p>
+    <div class="box-highlight">
+    <p>Panduan pemrograman mendukung perintah keyboard berikut:</p>
+        <ol>g - untuk memasukkan permintaan pencarian ke panduan</ol>
+        <ol>t - bertanya dengan berbicara</ol>
+        <ol>x - untuk berhenti mendengarkan pertanyaan</ol>
+    </div>
+    <div class="box-highlight">
+    <p>Jepretannya! manual mendukung perintah keyboard ini:</p>
+        <ol>m - untuk memasukkan permintaan pencarian ke manual</ol>
+        <ol>s - untuk mengucapkan pertanyaan</ol>
+        <ol>x - untuk berhenti mendengarkan pertanyaan</ol>
+    </div>
+    <p>Pencarian manual dan panduan dapat diimpor ke proyek yang sama. Namun jangan keduanya mendengarkan pidato Anda secara bersamaan. Bila Anda tidak lagi memerlukan bantuan ini, hapus saja sprite yang diimpor.</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 85,
+            'isi' => '
+                     <p>Akan menyenangkan untuk memvisualisasikan 300 angka yang terkait dengan sebuah kata. Salah satu caranya adalah dengan menggambar rangkaian garis vertikal, satu garis untuk setiap fitur.</p>
+            <figure class = "snap-iframe"
+        id = "draw word embedding"
+        full_screen = "true"
+        container_style = "width: 1000px; height: 500px"
+        >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=draw%20word%20embedding&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+
+     <p>Versi layar penuh dari program ini dapat ditemukan di sini. Lihat apakah Anda dapat membuat cara lain untuk memvisualisasikan <i> embedding </i> . Misalnya, untuk membandingkan dua penyematan, mungkin visualisasinya harus disisipkan.</p>
+ 
+    ',
+
+            'xp' => 10
+        ]);
+
+        Material::create([
+            'content_id' => 86,
+            'isi' => '
+       <p>Tidak ada yang bisa memvisualisasikan ruang 300 dimensi. Ada teknik untuk memberikan kesan hubungan antara titik-titik berdimensi sangat tinggi dengan memetakan titik-titik tersebut ke dua atau tiga dimensi. Kami menggunakan teknik yang disebut  <i>t-SNE</i>. Hal ini dapat dipahami sebagai simulasi fisika di mana semua titik di daerah padat saling tolak menolak dan semua titik tertarik ke titik yang jaraknya kecil (dalam ruang berdimensi tinggi). data projector menampilkan 20.000 kata bahasa Inggris dalam dua atau tiga dimensi menggunakan <i>t-SNE</i>, <i>PCA (principal component analysis)</i>, atau  <i>UMAP</i>. Anda juga dapat menggunakan proyektor untuk melihat penyematan kata dalam bahasa berikut:<i>German, Greek, Spanish, French, Finnish, Hindi, Indonesian, Italian, Japanese, Lithuanian, Portuguese, Sinhalese, Swedish, and Chinese</i></p>
+    <p>Perhatikan bahwa dibutuhkan beberapa ratus iterasi t-SNE sebelum dapat menghasilkan pemetaan yang baik dari 300 dimensi. Anda juga dapat mencari kata dan tetangganya serta membuat bookmark. Tautan di atas meluncurkan proyektor dengan penanda yang menunjukkan t-SNE dan menyorot seratus kata yang mendekati "anjing".</p>
+    <img src="/materials/12.png" alt="" style="width: 40%;" class="img-materials" >
+    <P>Di pojok kanan bawah, Anda dapat memilih penanda proyektor</P>
+    <p>Berikut adalah program yang menampilkan 50 kata acak di lokasi yang dihasilkan oleh t-SNE. </p>   
+    <figure class = "snap-iframe"
+        id = "random word locations"
+        full_screen = "true"
+        container_style = "width: 1000px; height: 800px" 
+        >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=random%20word%20locations&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <P>Berulang kali mengambil sebuah kata dan menampilkannya di lokasi t-SNE-nya. COBALAH!</P>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 87,
+            'isi' => '
+           <p>Blok fitur kalimat dan fitur kalimat dapat mengubah kalimat menjadi titik dalam ruang 512 dimensi. <i>Learn more here</i>. Meskipun kita tidak dapat memvisualisasikan ruang ini, ada teknik untuk memetakan titik-titik ini ke dalam 2 atau 3 dimensi yang, meskipun merupakan perkiraan, seringkali memberikan wawasan. <i>TensorFlow Projector</i> mengimplementasikan beberapa teknik serupa di halaman web. Proyektor memerlukan dua file: satu dengan penyematan kalimat (yaitu lokasi di ruang 512D) dan yang lainnya mengaitkan teks kalimat dengan penyematan.</p>
+     <p>Blok <sentences> to TSV melaporkan konten file embeddings dan blok <sentences> to TSV metadata melaporkan konten file metadata. Blok-blok ini dan contoh sepele penggunaannya dapat ditemukan di proyek <i>generate projector files</i> . Setelah blok ini dijalankan dan hasilnya diekspor sebagai file TSV, Anda dapat meluncurkan Proyektor  <i>TensorFlow Projector</i> dan mengklik tombol Muat untuk memuat file Anda ke dalam proyektor.</p>
+    <p>Contoh penggunaan blok ini adalah penerapan <i>application of the TensorFlow Projector to the sentences in the Snap! manual..</i>> Setelah menjelajahinya, kami sarankan Anda mengklik <i>bookmark APL</i> untuk melihat seseorang menggunakan proyeksi ini.</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 88,
+            'isi' => '
+     <p>Apa yang akan terjadi jika Anda mengambil, misalnya, ciri-ciri kata "anjing" dalam bahasa Inggris dan menanyakan kata yang paling mendekati, misalnya, dalam bahasa Prancis? Cobalah ini dengan bahasa sumber dan target yang berbeda serta kata-kata yang berbeda. Bandingkan dengan <i>Google Translate.</i>  Tip: mudah untuk menyalin dan menempelkan kata-kata yang tidak dapat diketik oleh keyboard Anda dari halaman <i>Google Translate..</i> Atau Anda dapat menggunakan  <i>input method editor</i> yang didukung oleh sistem operasi perangkat Anda. Bahasa yang didukung adalah China, Inggris, Finlandia, Prancis, Jerman, Yunani, Hindi, Indonesia, Italia, Jepang, Lituania, Portugis, Sinhala, Spanyol, dan Swedia.</p>
+     <figure class = "snap-iframe"
+        id = "translate exercise"
+        container_style = "width: 800px; height: 460px" 
+        >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=translate%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <p>Temukan kata terdekat dalam bahasa lain.</p>
+     <p>Perhatikan bahwa versi kata terdekat ini memiliki pilihan bagaimana seseorang mengukur jarak antara dua vektor.  <i>Euclidean distance</i> adalah ukuran jarak 2D yang lazim. <i>Cosine similarity</i> serupa tetapi lebih disukai oleh para ahli. Lihat apakah ada bedanya kata mana yang paling dekat dengan kata yang belum diterjemahkan.</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+
+        Material::create([
+            'content_id' => 89,
+            'isi' => '
+ <p>Permainan berikut memilih kata acak dan memberikan umpan balik yang lebih hangat atau lebih dingin kepada pemain saat pemain menebak. Caranya dengan membandingkan jarak kata rahasia dengan jarak sebelumnya. Ia menggunakan lokasi ... blok reporter untuk menampilkan tebakan Anda. Permainan ini sangat sulit! Ada banyak cara untuk membuat permainan menjadi lebih baik. Lihat apakah Anda bisa!</p>
+     <figure class = "snap-iframe"
+        id = "guess my word"
+        full_screen = "true"
+        container_style = "width: 800px; height: 800px" 
+        >
+</figure>
+
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=guess%20my%20word&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    
+     
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 90,
+            'isi' => '
+<p>Peneliti pemrosesan bahasa alami telah melatih model untuk mengatasi tugas tingkat kalimat seperti menjawab pertanyaan. Mereka memiliki nama <i>Sesame Street</i>  seperti Elmo, Bert, dan Ernie. Bert (sebenarnya BERT yang merupakan singkatan dari Representasi Encoder Dua Arah dari Transformers) telah tersedia untuk <i>browser</i>.</p>
+     <P>BERT digunakan dalam implementasi dapatkan hingga 5 jawaban tanya jawab ... menggunakan blok bagian ini. Dengan adanya satu bagian teks (biasanya satu halaman atau kurang), mereka dapat menjawab pertanyaan tentang isinya. Blok pertanyaan dapatkan hingga 5 jawaban melaporkan daftar yang elemennya berupa daftar jawaban dan skor yang menunjukkan seberapa yakin model tersebut. Cara mudah untuk mengimpor bagian ke Snap! adalah menyeret file yang berisi teks biasa ke area skrip</P>
+            <figure class = "snap-iframe"
+        id = "question answer"
+        full_screen = "true"
+        container_style = "width: 800px; height: 800px" 
+    >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=question%20answer&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <P>Ajukan pertanyaan tentang bagian teks yang menjelaskan Snap!. COBALAH!</P>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 91,
+            'isi' => '
+    <P>GPT-3 adalah model jaringan saraf yang mampu menghasilkan teks sebagai respons terhadap perintah. Hal yang mengesankan adalah seberapa sering teks yang dihasilkan sangat tepat baik itu menjawab pertanyaan, memperbaiki tata bahasa kalimat, merangkum teks, atau mengikuti instruksi. GPT-3 dilatih mengenai ratusan miliar kata dari halaman web dan buku. Anehnya, "satu-satunya" hal yang dipelajarinya adalah memprediksi kata berikutnya (atau token yang terkadang merupakan bagian dari sebuah kata). Orang menyebut model seperti ini “model bahasa”.</P>
+     <p>Anda dapat mengakses GPT-3 dari Snap! menggunakan blok lengkap menggunakan GPT-3.... Anda harus menyediakannya dengan <i> OpenAI GPT-3 API key</i>. Ia menerima banyak <i>options supported by the OpenAI API</i>.</p>
+    <p><i>AI21 Studios</i> telah merilis model mirip dengan GPT-3 yang disebut Jurassic 1 seperti yang dimiliki <i>Cohere</i>. Blok lengkap menggunakan Jurassic 1 ... dan lengkap menggunakan <i>Cohere</i> ... berfungsi sangat mirip dengan versi GPT-3. Anda perlu mendapatkan  <i>AI21 Studios or Cohere</i>. Jurassic 1 and Cohere model. Opsi model Jurassic 1 dan Cohere juga mirip dengan opsi GPT-3 tetapi perhatikan bahwa opsi tersebut diterapkan oleh sekumpulan reporter paralel yang diakhiri dengan "(J1)" atau "(Cohere)". Ada juga opsi reporter umum yang dapat ditemukan di Snap "Model bahasa"! Kategori.</p>
+            <figure class = "snap-iframe"
+        id = "language model demo"
+        container_style = "width: 800px; height: 880px" 
+        >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=language%20model%20demo&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 92,
+            'isi' => '
+         <p>GPT-3, Jurassic 1, or Cohere Gopher adalah contoh program yang mencoba mengadakan percakapan menggunakan GPT-3, Jurassic 1, atau Cohere. Ia menggunakan <i>speech recognition</i> untuk mendengarkan apa yang Anda katakan. Apa yang Anda ucapkan ditambahkan ke perintah yang mencoba membuat GPT-3 menjadi pembicara yang baik dengan menjelaskan situasinya dan memberikan beberapa percakapan. Hal ini menghindari masalah seiring berjalannya percakapan, perintah menjadi terlalu panjang untuk GPT-3 dengan memotongnya sambil mempertahankan deskripsi konteks. Baca <i>Conversations with and between personas using language models</i> untuk mempelajari lebih lanjut.</p>
+    <p>Proyek ini mendukung beberapa "persona". Gopher adalah upaya untuk menjadi pembicara umum yang ramah. El diminta untuk berpura-pura menjadi gajah sehingga seseorang dapat menanyakan pertanyaan seperti "Apa makanan favoritmu?" atau "Apakah kamu suka jogging?". Hawa berpura-pura menjadi Gunung Everest. Ajukan pertanyaan seperti "Berapa berat badanmu?" atau "Bagaimana saya bisa datang mengunjungi Anda?". Charles adalah simulasi sederhana dari Charles Darwin. Tanyakan padanya tentang kehidupannya, evolusinya, atau bukunya. Contrarian suka berdebat sedangkan Curiosity sangat ingin tahu. Persona yang berbeda ini menjalankan skrip yang sama. Perbedaannya hanya pada teks pengantar dan contoh percakapan awal. Mereka bahkan dapat berbicara satu sama lain!</p>
+    <p>Perhatikan bahwa proyek ini juga mengilustrasikan bagaimana seseorang dapat membuat antarmuka yang sepenuhnya berorientasi pada ucapan. Selain komunikasi <i>API key</i> Anda, semuanya menggunakan input dan output ucapan. Hal ini sangat berguna ketika proyek dijalankan pada ponsel pintar. Lihatlah skrip untuk melihat cara kerjanya.</p>
+    
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 93,
+            'isi' => '
+             <p>Debate adalah contoh program yang menggunakan model bahasa dari <i>OpenAI</i>, <i>AI21 Studios, or Cohere</i>  untuk menghasilkan transkrip debat virtual tentang topik apa pun. Baca posting ini untuk mempelajari lebih lanjut</p> 
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 94,
+            'isi' => '
+                <p><i>Turtle command generator</i>  adalah contoh program yang menggunakan GPT-3 untuk mengontrol gerakan sprite. Ia bekerja dengan membuat GPT-3 menghasilkan perintah Logo turtle sebagai respons terhadap instruksi lisan atau ketikan. Perintah-perintah itu kemudian diubah menjadi Snap! blok. Baca post ini untuk mempelajari lebih lanjut.</p>  
+     <img src="assets/18.png" alt="" style="width: 40%;">
+     <p>Lihat bagaimana seseorang mendapatkan model bahasa untuk menghasilkan perintah gerakan</p>
+     <p>Anda dapat menghentikan proyek dan menjalankan perintah log ke blok untuk mengubah riwayat interaksi Anda menjadi Snap! blok. Misalnya,</p>
+            <figure class = "snap-iframe"
+        id = "language model to turtle commands"
+        full_screen = "true"
+        container_style = "width: 800px; height: 800px" 
+        >
+        <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=language%20model%20to%20turtle%20commands&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+</figure>
+     
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 95,
+            'isi' => '
+                    <p>Blok Minta DALLE-2 untuk membuat ... kostum ... dapat digunakan untuk menghasilkan kostum. Dengan <i>API key from OpenAI </i> seseorang dapat menggunakan blok ini untuk menghasilkan kostum (dengan biaya masing-masing 2 sen AS atau kurang). Deskripsi kostum Anda dapat mencakup medium (cat air, foto, kaca patri, lukisan cat minyak, dll.), gaya (seperti Simpsons, Studio Ghibli, Rembrandt, Picasso, Cezanne, dll.), pencahayaan, sudut pandang, dll. Pelajari lebih lanjut tentang DALL-E -2 here. </p>
+            <figure class = "snap-iframe"
+        id = "dalle-2 exercise"
+        container_style = "width: 850px; height: 200px" 
+    >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=dalle-2%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+            
+     <p>DALL-E-2 demo project ini meminta deskripsi dan membuat dua kostum, menambahkannya ke sprite, lalu memudar masuk dan keluar di antara keduanya. Ini juga menunjukkan cara mengganti warna (dalam hal ini putih) dengan transparansi.     </p>
+
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 96,
+            'isi' => '
+                       <p>Blok Tanya ... untuk membuat kostum yang dideskripsikan sebagai ... dapat menggunakan<i>Stable Diffusion text-to-image model or DALLE-2</i> untuk menghasilkan gambar.</p> 
+    <img src="assets/22.png" alt="" style="width: 40%;"> 
+    <p>Sebuah blok untuk menghasilkan kostum sebagai respons terhadap teks menggunakan Stanble Diffusion  atau DALLE-2</p>
+            <figure class = "snap-iframe"
+        id = "Stable Diffusion exercise"
+        full_screen = "true"
+        edit_mode = "true"
+        container_style = "width: 1200px; height: 600px" 
+    >
+</figure> 
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Stable%20Diffusion%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 97,
+            'isi' => '
+<p class="instructions">
+Blok <span class="block-name">Ask ... to create a costume described as ...</span> dapat menggunakan model teks-ke-gambar <a href="https://stability.ai/" target="_blank">Stable Diffusion</a> atau <a href="https://openai.com/dall-e-2/" target="_blank">DALLE-2</a> untuk menghasilkan gambar.
+</p>
+
+<figure class = "snap-iframe"
+        id = "Generic text-to-image exercise"
+        full_screen = "true"
+        edit_mode = "true"
+        container_style = "width: 1200px; height: 600px" 
+    >
+</figure> 
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Generic%20text-to-image%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 98,
+            'isi' => '
+     <p>Blok Minta DALLE-2 untuk membuat ... kostum sebagai varian kostum ... dapat digunakan untuk membuat varian kostum. Lebar dan tinggi kostum harus sama.</p>
+<figure class = "snap-iframe"
+        id = "Generic text-to-image exercise"
+        full_screen = "true"
+        edit_mode = "true"
+        container_style = "width: 1200px; height: 600px" 
+    >
+</figure> 
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Generic%20text-to-image%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <p>Sebuah blok untuk menghasilkan kostum varian</p>
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 99,
+            'isi' => '
+     <p>Blok Minta DALLE-2 untuk membuat ... kostum sebagai pengeditan kostum ... dapat digunakan untuk mengedit kostum. Lebar dan tinggi kostum serta kostum "topeng" harus sama. "Kostum topeng" harus memiliki piksel transparan yang akan diganti tergantung perintah yang diberikan.</p>
+            <figure class = "snap-iframe"
+        id = "dalle-2 variant exercise"
+        full_screen = "true"
+        edit_mode = "true"
+        container_style = "width: 1050px; height: 500px" 
+    >
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=dalle-2%20variant%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <p>Sebuah blok untuk mengedit kostum</p>
+     <p><i>sample project</i> ini menggabungkan varian DALL-E dan blok pengeditan dengan <i>the computer vision segmentation block</i>. Proyek ini mengambil foto seseorang, membuat varian, menggunakan segmentasi untuk membuat topeng latar belakang, dan pengeditan DALL-E untuk mengubah latar belakang sesuai dengan perintah yang dimasukkan.</p>
+   
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 100,
+            'isi' => '
+                 <p><i>Hugging Face</i> menyediakan akses ke lebih dari 15.000 model jaringan saraf. Tersedia kunci API gratis yang dibatasi hingga 30.000 karakter input per bulan saat berkomunikasi dengan model berbasis teks. Masukan tambahan dikenakan biaya $10 per juta karakter. Lihat <i>Hugging Face pricing</i>. </p>  
+                 <div class="box-highlight">
+    <p>Model <i>Hugging Face</i>memiliki kegunaan yaitu: </p>
+        <ol>Terjemahkan antar bahasa. Tersedia lebih dari 1300 model yang menerjemahkan dari bahasa X ke bahasa Y.</ol>
+        <ol>Klasifikasikan teks ke dalam kategori yang Anda pilih. Secara opsional, teks dapat diberi beberapa label.</ol>
+        <ol>Menghasilkan ringkasan teks. Secara opsional dapat mengontrol panjang, pengulangan, dan banyak lagi.</ol>
+        <ol>Adakan percakapan. Perhatikan bahwa model ini jauh lebih kecil dan kurang mampu dibandingkan model terbesar GPT-3, Jurassic 1, dan Cohere.</ol>
+        <ol>Kueri spreadsheet. Ajukan pertanyaan tentang tabel data.</ol>
+        <ol>Jawab pertanyaan berdasarkan konteksnya. Perhatikan bahwa model serupa dapat dijalankan di <i>browser</i> tanpa mengakses <i>Hugging Face</i>.</ol>
+        <ol>Deteksi seberapa positif atau negatif suatu teks.</ol>
+        <ol>Temukan entitas bernama di beberapa teks.</ol>
+        <ol>Isi bagian yang kosong. Akan memprediksi teks yang hilang.</ol>
+            </div>
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 101,
+            'isi' => '
+               <a href="https://en.wikipedia.org/wiki/Codenames_(board_game)" target="_blank">Codenames</a> adalah sebuah permainan papan yang telah memenangkan banyak penghargaan.
+Setiap tim memiliki seorang master mata-mata yang memberikan petunjuk berupa satu kata kepada rekan satu timnya.
+Para rekan satu tim melihat 25 kata (awalnya) dan perlu menebak kata-kata mana yang dimaksud oleh master mata-mata.
+Dengan menggunakan <span class="block-name">kata-kata terdekat dengan</span> reporter, seseorang dapat menemukan kata yang "dekat" dengan kata-kata tim mereka dan "jauh" dari kata-kata tim lawan atau kata kode dari pembunuh.
+</p>
+<p class="instructions">
+Berikut ini adalah
+<a href="../snap/snap.html?project=codenames" target="_blank">program yang sebagian mengimplementasikan master mata-mata</a>.
+Diberikan daftar kata, program ini menemukan petunjuk terbaik untuk dua dari kata-kata tersebut.
+Mulai dari program ini, Anda dapat membuat program untuk bermain <i>Codenames</i>.
+Cobalah untuk meningkatkan program ini agar bisa mencari petunjuk untuk lebih dari dua kata sekaligus.
+Tingkatkan juga agar memastikan bahwa tidak ada petunjuk yang mungkin menyarankan kata-kata dari tim lawan atau kata kode dari pembunuh.
+</p>
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 102,
+            'isi' => '
+                     <p>Penyematan kata dan kalimat dapat digunakan sebagai komponen dalam program AI yang melakukan analisis sentimen, deteksi entitas, rekomendasi, merangkum teks, terjemahan, dan menjawab pertanyaan. Hal ini biasanya dilakukan dengan mengganti kata atau frasa dalam teks dengan penyematannya, lalu melatih sistem pembelajaran mesin tentang perkiraan arti kata tersebut. Hal ini membuat sistem bekerja lebih baik dengan sinonim dan parafrase.</p>
+     <p>Penyematan kata dipelajari dengan memeriksa teks dengan miliaran kata. Teks-teks ini mungkin menangkap bias masyarakat. Misalnya saja, contoh berikut tampaknya menangkap bias bahwa tukang daging adalah laki-laki dan pembuat roti adalah perempuan. Namun biasanya sangat lemah sehingga jika kesamaan kosinus digunakan sebagai pengganti jarak Euclidean, maka "koki" yang tidak bias akan ditemukan. Beberapa database penyematan kata memiliki bias bahwa dokter adalah laki-laki dan perawat adalah perempuan. Mereka akan menjawab pertanyaan "laki-laki ke dokter seperti perempuan ke X" dengan "perawat". Apakah ini sebuah bias? Atau mungkin karena hanya perempuan yang bisa menyusui bayi? Jalankan beberapa eksperimen di bawah untuk mengeksplorasi pertanyaan-pertanyaan semacam ini.</p>
+            <figure class = "snap-iframe"
+        id = "word analogy bias"
+        container_style = "width: 700px; height: 450px" 
+        caption = "Bias in word analogy solutions. Run it and then swap man and woman. See if you can find more biases.">
+</figure>
+            <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=word%20analogy%20bias&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+
+     <p>Bias dalam solusi analogi kata. Jalankan lalu tukar pria dan wanita. Lihat apakah Anda dapat menemukan lebih banyak bias.</p>
+     <p>Sebuah makalah berjudul Semantik yang diturunkan secara otomatis dari korpora bahasa yang mengandung bias mirip manusia mengusulkan cara untuk mengukur bias kata. Idenya adalah menggunakan jarak rata-rata yang dimiliki dua kata terhadap dua kumpulan kata "atribut". Untuk mengeksplorasi bias gender, misalnya, daftar kata atribut dapat berupa “laki-laki, laki-laki, laki-laki” dan “perempuan, perempuan, perempuan”. Perbedaan jarak rata-rata memberikan skor yang dapat digunakan untuk membandingkan kata. Dalam penerapan penilaian reporter ini terlihat bahwa “matematika” memiliki skor “kejantanan” yang lebih tinggi daripada “seni”. Dan “seni” memiliki skor “kesenangan” yang lebih tinggi dibandingkan “matematika”.</p>
+
+    
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 103,
+            'isi' => '
+
+     <p>Meskipun kita tidak benar-benar tahu apa arti angka-angka tersebut, angka-angka tersebut pasti mengkodekan banyak hal tentang kata-kata seperti jenis kelamin, kategori tata bahasa, hubungan keluarga, dan ratusan hal lainnya. Namun jumlahnya tidak sempurna.</p>
+      <p>Lihat apakah Anda dapat membuat beberapa contoh yang hasilnya tidak bagus. Salah satu masalah umum dalam cara menghasilkan angka adalah bahwa angka tersebut menggabungkan fitur-fitur dari arti yang berbeda dari kata yang sama. Hanya ada satu entri, misalnya, untuk "bank" yang menggabungkan cara penggunaan kata tersebut dalam kalimat tentang lembaga keuangan dan kalimat tentang tepi sungai.</p>
+      <p>Hal ini dapat menyebabkan kata-kata menjadi lebih dekat dari yang seharusnya. Misalnya, "tikus" dan "layar" menjadi lebih berdekatan karena "tikus" berada dekat dengan "mouse" dan "mouse" (perangkat masukan komputer) berada dekat dengan "layar" (komputer). Ini adalah masalah yang sedang ditangani para peneliti. Masalah lainnya adalah terkadang frasa pendek berfungsi seperti kata-kata. "Es krim", misalnya, tidak memiliki kata yang disematkan, sedangkan "serbet" dan "sorbet" memilikinya</p>  
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 104,
+            'isi' => '
+               <p>Berikut adalah program yang menanyakan dua bahasa kepada pengguna, memperoleh vektor fitur dari kata acak dari bahasa pertama, dan kemudian menampilkan beberapa kata yang paling dekat dengan vektor fitur tersebut. Ini menempatkan kata-kata dalam perkiraan dua dimensi t-SNE di mana kata-kata 300 dimensi sebenarnya berada</p>
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 105,
+            'isi' => '
+     <p>Penyematan kata untuk setiap bahasa dihasilkan secara independen berdasarkan teks dari Wikipedia dan web. Lokasi fitur dalam ruang 300 dimensi untuk kata seperti "anjing" tidak ada hubungannya dengan lokasi fitur terjemahan kata "anjing". Para peneliti memperhatikan bahwa di sebagian besar (semua?) bahasa, beberapa kata saling berdekatan. Misalnya," "anjing"," "anjing", "anak anjing", dan "anjing" itu dekat. Kata-kata seperti "serigala", "sapi", dan "tikus" memang mirip tetapi tidak sedekat kata-kata itu</p>
+     <p>Dan semua kata tersebut jauh dari kata-kata abstrak seperti "kebenaran" dan "logika". Jadi mereka menemukan bahwa ada kemungkinan untuk menemukan rotasi yang akan menyebabkan banyak kata yang disematkan dalam satu bahasa menjadi dekat dengan kata-kata yang terkait dalam bahasa lain.</p>
+     <p>Cara yang dilakukan pada awalnya dan di Snap ini! blok adalah dengan memberikan program daftar kata antara bahasa Inggris dan bahasa lainnya. 500 kata sudah cukup untuk menemukan rotasi bagus yang mendekatkan sebagian besar 19.500 kata lainnya ke tempat terjemahannya.</p>
+     <p>Meskipun sangat mengesankan bahwa terjemahan berhasil mengingat daftar kata yang hanya mencakup 2,5% kosakata, para peneliti di <i>Facebook</i> menjelaskan teknik yang tidak menggunakan daftar kata atau teks terjemahan. Hanya diperlukan rotasi karena semua kata yang disematkan berpusat di sekitar nol sehingga tidak perlu diterjemahkan (dalam arti matematis, yaitu dipindahkan) juga.</p>
+     <p>amun perhatikan bahwa terjemahannya terjadi dalam 299 dimensi!</p>
+     <img src="/materials/26.jpg" class="img-materials" alt="" style="width: 40%;">
+     <p>Dua cara menyelaraskan penyematan kata dalam bahasa berbeda
+        Pada gambar (A) dan (B) menunjukkan X diputar untuk mencocokkan Y untuk membuat sejumlah kecil kata di X sejajar dengan terjemahannya di Y. Hasilnya, banyak kata lain yang kira-kira sejajar. Teknik lain dapat diterapkan untuk meningkatkan keselarasan.</p>
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 106,
+            'isi' => '
+      <p>Dengan menggunakan teknik serupa dengan cara menghasilkan vektor untuk kata-kata, kita juga dapat menghasilkan vektor untuk gambar. Fitur get kostum dari ... blok akan meneruskan vektor 1280 angka ke blok yang disediakan. Ini menggunakan <i>Mobile Net</i> untuk menghitung angka dari "atas" jaringan saraf.</p>
+            <figure class = "snap-iframe"
+        id = "image embedding exercise"
+        container_style = "width: 675px; height: 525px" 
+    >
+</figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=image%20embedding%20exercise&editMode" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+     <p>Sebuah blok untuk mengubah gambar menjadi daftar 1280 angka. COBALAH!</p>
+     <p>Seseorang dapat menggunakan penyematan gambar untuk menentukan gambar mana yang dekat dengan gambar lainnya. Kedekatan memperhitungkan banyak faktor termasuk tekstur, warna, bagian, dan semantik. Penyematan gambar dapat digunakan untuk menyelesaikan masalah analogi gambar yang serupa dengan cara menyelesaikan masalah analogi kata</p>
+     <p>Pada bab pembelajaran mesin terdapat deskripsi kereta dengan gambar ember ... blok yang digunakan untuk pelatihan. Ia bekerja dengan mengumpulkan vektor fitur dari semua gambar pelatihan dan kemudian menemukan tetangga terdekat dengan gambar uji untuk menentukan label apa yang akan diberikan pada gambar tersebut.</p>
+     
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 107,
+            'isi' => '
+      <p>Berikut adalah beberapa ide proyek:</p>
+     <ol>1. Temukan rangkaian kata yang mirip dengan mencari kata yang paling dekat dengan kata awalnya. Kemudian berulang kali temukan kata yang terdekat dengan kata tersebut sambil memastikan untuk tidak pernah mengulangi kata yang sama. Gunakan ini untuk berulang kali mengubah kata-kata acak satu per satu dalam puisi atau teks terkenal (misalnya, "mawar berwarna merah dan violet berwarna biru").</ol>
+     <ol>2. Buat permainan kata menggunakan penyematan kata. Misalnya saja Semantris, versi semantik dari Tetris. Semantris versi bilingual mungkin merupakan ide yang bagus </ol>
+     <ol>3. Buat program yang mencari analogi kata baru. Petunjuk: Jika A ke B dan C ke D, maka A-B "mendekati" C-D.</ol>
+     <ol>4. Jelajahi mengapa terkadang analogi kata benar dan terkadang salah. Apakah jawaban terdekat kedua, ketiga, atau kesepuluh lebih masuk akal? Petunjuk: gunakan kata-kata yang paling dekat dengan reporter untuk mendalami hal ini. Apakah analogi kata lebih baik jika A dekat dengan B dalam "A ke B seperti C ke D"?</ol>
+     <ol>5. Para peneliti menemukan bahwa jika melihat jarak rata-rata antara kata menyenangkan dan kata "bunga", jarak tersebut jauh lebih kecil dibandingkan jarak "bunga" ke kata tidak menyenangkan. Hal sebaliknya terjadi jika menelusuri jarak kata menyenangkan dan tidak menyenangkan dengan kata "serangga". Berdasarkan pengamatan ini, orang-orang membuat perbandingan lain untuk melihat bagaimana, misalnya, kata-kata tentang laki-laki lebih mirip dengan kata-kata tentang sains, sedangkan kata-kata tentang perempuan lebih mirip dengan kata-kata seni. Lihat apakah Anda dapat menemukan bias lain yang muncul dari cara orang menulis tentang sesuatu. Jika Anda mengetahui bahasa lain (dan bahasa tersebut merupakan salah satu dari 15 bahasa yang didukung) lihat apakah bahasa tersebut berlaku di berbagai bahasa.</ol>
+     <ol>6. Jelajahi hubungan antar kata dalam kelompok seperti kata berwarna atau kata emosi. Apakah "merah", "hijau", dan "biru" berdekatan satu sama lain atau merupakan kata-kata warna yang berdekatan bila warnanya tampak serupa. Jika Anda mengetahui bahasa lain, lihat apakah bahasa yang berbeda mengatur kata-kata berwarna secara berbeda. Coba ini dengan kategori lain seperti emosi, arah, angka, dll.</ol>
+     <ol>7. Jelajahi hubungan antara versi tata bahasa yang berbeda dari kata dasar yang sama. Misalnya, hubungan "tinggi", "lebih tinggi", "tertinggi", "pendek", "lebih pendek", "terpendek". Atau "lari", "lari", "berlari" (dan "berair" dan "lebih berlari"). Dapatkah Anda menemukan beberapa pola umum? Apakah mereka menggeneralisasi ke bahasa lain?</ol>
+     <ol>8. Jelajahi penyematan kata untuk kata angka. Misalnya, "dua" berarti "empat" dan "sepuluh" berarti "dua puluh". Dapatkah Anda menemukan contoh lain?</ol>
+     <ol>9. Tebak Kata Saya sangat sulit karena jawabannya bisa satu dari 20.000 kata. Buatlah versi permainan yang lebih mudah.</ol>
+     <ol>10. Menerapkan Spymaster untuk game Codenames.</ol>
+     <ol>11. Coba gunakan embeddings untuk mengeksplorasi kesamaan kalimat. Gunakan blok fitur kalimat... untuk mendapatkan fitur kalimat. Buat proyek yang memutuskan apakah dua kalimat merupakan parafrase.</ol>
+     <ol>12. Buat proyek penjawab pertanyaan yang memeriksa apakah pertanyaan yang diajukan cukup mirip dengan pertanyaan yang diketahui sehingga dapat dibalas dengan jawaban "kalengan". Anda mungkin ingin memulai dengan meningkatkan contoh proyek yang menjawab pertanyaan tentang Snap! blok AI</ol>
+     <ol>13. Menggunakan blok jawaban pertanyaan ini ... menggunakan bagian ini ... bersama dengan blok Tanya <i>Wikipedia</i> untuk membuat program penjawab pertanyaan umum. Pertimbangkan untuk menambahkan masukan dan keluaran ucapan.</ol>   
+     <ol>14. Ada banyak cara untuk menambahkan GPT-3 ke proyek Anda dengan menggunakan blok lengkap menggunakan GPT-3 .... OpenAI mencantumkan lusinan tugas yang dapat Anda berikan.</ol>
+     <ol>15. Proyek percakapan GPT-3, Jurassic 1, dan Cohere mendukung beberapa persona. Lihat apakah Anda dapat menciptakan lebih banyak lagi. Misalnya, perhatikan Bima Sakti</ol>
+     <ol>16. Alternatifnya, daripada menyempurnakan proyek percakapan, buatlah proyek percakapan Anda sendiri dari awal dengan mengikuti tutorial ini.</ol>
+     <ol>17. Contoh proyek GPT-3 untuk menghasilkan cerita bergambar dapat dieksplorasi dengan mengubah perintah, suhu penyelesaian, dan pengaturan lainnya.</ol>
+     <ol>18. Blok Minta DALLE-2 untuk membuat ... kostum ... dapat digunakan dalam proyek yang menggambar sesuatu dan membuat kostum baru menggunakan perintah tekstual dan jalur pena untuk membuat kostum gambar.</ol>
+     <ol>19. Proyek pembuatan debat virtual dapat ditingkatkan dengan banyak cara termasuk menciptakan lebih banyak sanggahan dan ringkasan.</ol>
+     <ol>20. Jadilah kreatif! Penyematan kata dan model bahasa merupakan hal baru dan masih banyak yang perlu ditemukan.</ol>
+
+
+    ',
+
+            'xp' => 10
+        ]);
+
+
+        Material::create([
+            'content_id' => 108,
+            'isi' => '
+          <p>Blok penyematan kata baru dapat ditambahkan. Saat ini kata blok embeddings tidak termasuk semua kata benda yang tepat. Jika kita menambahkannya, kita dapat memecahkan analogi seperti Paris dengan Perancis dan Berlin dengan X. Menjelajahi bagaimana kata-kata berubah seiring waktu dapat menghasilkan proyek-proyek besar. Penyematan kata yang dihasilkan dari publikasi dalam periode waktu berbeda dapat digunakan untuk melihat bagaimana kata-kata seperti "mengerikan" dan "siaran" telah berubah selama dua abad terakhir. Blok baru dapat ditambahkan berdasarkan penelitian tentang menghasilkan penyematan "makna kata" dan bukan penyematan kata. Misalnya, satu arti "bebek" dekat dengan "ayam" sementara arti lain dekat dengan "melompat".</p>
+     <p>Masih banyak lagi yang dapat dilakukan program AI dengan bahasa termasuk menentukan struktur tata bahasa kalimat (ini disebut "parsing"), mencari tahu sentimen dalam beberapa teks, dan meringkas teks. Kami berencana untuk menambahkan lebih banyak.</p>
+
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 109,
+            'isi' => '
+               <p>Artikel penyematan kata Wikipedia pendek dan ditulis untuk pembaca tingkat lanjut. Tim Facebook menulis makalah yang merinci bagaimana mereka menghasilkan penyematan kata yang kami gunakan di sini: E. Grave, P. Bojanowski, P. Gupta, A. Joulin, T. Mikolov, Mempelajari Vektor Kata untuk 157 Bahasa.</p>
+     <p>Halaman web Memahami vektor kata memiliki pengenalan subjek yang sangat baik dan berisi contoh-contoh yang berguna tetapi memerlukan pemahaman tentang Python. Blog Google tentang bias dalam penyematan kata ini sangat bagus dan jelas. Kursus Mengarahkan Google yang tepat untuk AI membahas bias dan masalah sosial lainnya termasuk interpretasi, pekerjaan, dan berbuat baik. Adil Lebih Baik daripada Sensasional: Laki-laki ke Dokter seperti Wanita ke Dokter membahas bias dalam penyematan kata secara mendalam.</p>
+     <p>Cara Menggunakan t-SNE Secara Efektif adalah penjelasan interaktif yang jelas tentang cara kerja t-SNE. Memanfaatkan Kesamaan antar Bahasa untuk Terjemahan Mesin memelopori gagasan menyesuaikan penyematan kata untuk mendukung terjemahan. Terjemahan Kata Tanpa Data Paralel mengeksplorasi bagaimana penyematan kata dapat digunakan untuk terjemahan tanpa menggunakan daftar kata atau teks terjemahan.</p>
+     <P><i>proyektor.tensorflow.org</i> adalah situs web bagus untuk menjelajahi berbagai cara memvisualisasikan ruang berdimensi tinggi secara interaktif. Berikut adalah video ceramah indah Laurens van der Maaten yang menemukan ide t-SNE.</P>   
+   
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 110,
+            'isi' => '
+               <p>Anda dapat mengimpor blok yang disajikan di sini sebagai proyek atau mengunduhnya sebagai perpustakaan untuk diimpor ke proyek Anda.</p>
+
+    ',
+
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 111,
+            'isi' => '
+                 <p>Lanjutkan ke bab berikutnya tentang jaringan saraf</p>
+                 <img src="https://miro.medium.com/v2/resize:fit:2000/1*3fA77_mLNiJTSgZFhYnU0Q@2x.png" class="img-materials" alt="" style="width: 40%;">
+
+    ',
+
             'xp' => 10
         ]);
 
