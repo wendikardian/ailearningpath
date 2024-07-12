@@ -45,11 +45,11 @@ class DatabaseSeeder extends Seeder
             'status' => 1
         ]);
 
-        Learning::create([
-            'course_id' => 3,
-            'user_id' => 2,
-            'status' => 0,
-        ]);
+        // Learning::create([
+        //     'course_id' => 3,
+        //     'user_id' => 2,
+        //     'status' => 0,
+        // ]);
         Achievement::create([
             'user_id' => 2,
             'total_point' => 0,
@@ -781,7 +781,7 @@ class DatabaseSeeder extends Seeder
         Content::create([ //48
             'course_id' => 3,
             'sub_course_id' => 16,
-            'judul' => 'Layanan Demo!',
+            'judul' => 'Demo aplikasi Cuaca!',
             'tipe_content' => 1,
             'prev_id' => 47,
             'next_id' => 49,
@@ -2458,15 +2458,17 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
         Material::create([
             'content_id' => 43,
             'isi' => '
-                <p>Program berikut menggunakan blok <i>"listen then ..."</i> untuk mengontrol <i>sprite</i>. Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
+                <p>Program berikut menggunakan blok <i class="highlight-word">"listen then ..."</i> untuk mengontrol <i>sprite</i>. Kalian dapat memerintahkannya untuk maju atau berbelok ke kanan. Kemudian program akan menanyakan seberapa banyak dan melaksanakan perintah tersebut. Katakan <i> "goodbye" </i> untuk keluar dari program. Terkadang kita perlu mengulangi perkataannya. Terkadang program dapat melakukan kesalahan dalam mendengar ucapan</p>
 
     <br>
-    <figure class = "snap-iframe"
-        id = "listen error"
-        container_style = "width: 700px; height: 275px" >
-    </figure>
-         <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=command#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
-    <p>Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Nah kamu juga dapat menambahkan perintah lainnya ya! Petunjuk: bagaimana jika kita menambahkan perintah mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
+   <figure class = "snap-iframe"
+        id = "story generator"
+        full_screen = "true"
+        container_style = "width: 800px; height: 600px" >
+        
+</figure>
+         <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=command" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <p class="box-highlight">Latihan: Coba tambahkan perintah <i> "turn left" </i> ke dalam program. Nah kamu juga dapat menambahkan perintah lainnya ya! Petunjuk: bagaimana jika kita menambahkan perintah mengubah ukuran, tampilan, warna, atau lainnya? Bagaimana dengan melakukan animasi sebagai respons terhadap perintah suara?</p>
 
             ',
             'xp' => 10
@@ -2474,7 +2476,7 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
         Material::create([
             'content_id' => 44,
             'isi' => '
-             <p> Jika kalian mengklik <img src="/materials/panah.png" class="img-materials" alt="">kalian akan melihat blok-blok di balik program. Jika Kalian kemudian mengklik kanan pada "speak turtle commands" dan memilih "edit", Kalian akan melihat program berikut.</p> 
+             <p> Jika kalian mengklik <img src="/materials/panah.png" class="img-materials" alt="">kalian akan melihat blok-blok di balik program. Jika Kalian kemudian mengklik kanan pada <i class="highlight-word">"speak turtle commands"</i> dan memilih "edit", Kalian akan melihat program berikut.</p> 
     <img src="/materials/spoken-block.png" alt="" style="width: 40%;" class="img-materials">
     <p> Variabel "spoken" berisi apa yang baru saja dikenali. Perintah <i> if-then-else </i> bersarang pertama-tama akan menguji ucapan untuk keluar dari program, kemudian untuk gerakan maju, dan kemudian perintah berbelok. Jika tidak ada yang cocok, maka respons "tidak dimengerti" dibuat. Baik perintah berbelok maupun bergerak menyebabkan program menanyakan jumlah untuk berbelok atau bergerak. Ketika sebuah angka diucapkan, kura-kura kemudian berbelok atau bergerak menyesuaikan.</p>
 
@@ -2496,8 +2498,9 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
    <figure class = "snap-iframe"
         id = "part of speech broadcast"
         full_screen = "true"
-        container_style = "width: 800px; height: 600px" 
+        container_style = "width: 800px; height: 600px" >
 </figure>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=part%20of%20speech%20broadcast" class="font-bold text-primary" target="_blank">klik disini!</a></p>
     
    
     
@@ -2522,13 +2525,13 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
 
             <p>Program berikut dapat memperluas kalimat yang lebih rumit dengan menambahkan fitur baru. Yang biasanya kita hanya menghasilkan kalimat pendek dan sederhana, disini kita belajar untuk menghasilkan kalimat yang lebih rumit dengan cerita pendek. Jika program menemukan kata yang dimulai dengan "=", itu akan menggantikannya dengan respons terakhir untuk permintaan contoh kata/frasa tersebut.</p>    
 
-    <figure class = "snap-iframe"
+   <figure class = "snap-iframe"
         id = "story generator"
         full_screen = "true"
-        container_style = "width: 800px; height: 600px" >
-
+        container_style = "width: 800px; height: 600px" 
+        >
 </figure>
-<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Wikipedia answers#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+<p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=story%20generator" class="font-bold text-primary" target="_blank">klik disini!</a></p>
      
     <p>Contoh, di bawah ini terdapat cerita pendek yang memakai <i> template </i> kalimat acak</p> <p class="box-highlight"><i>This is a story about ?GIRLS-NAME. =GIRLS-NAME is ?ADJECTIVE and very ?ADJECTIVE. She travelled to ?PLACE-NAME. There she met ?BOYS-NAME who was a ?OCCUPATION in =PLACE-NAME. =GIRLS-NAME and =BOYS-NAME lived ?ADVERB ever after.</i></p>
     <p>Apabila kita merespon dengan <span class="highlight-word" > "Juliet", "warm", "beautiful", "Verona", "Romeo", "amateur poet", dan "barely"</span > maka ceritanya akan menjadi seperti dibawah ini</p> <p class="box-highlight"><i>This is a story about Juliet. Juliet is warm and very beautiful. She travelled to Verona. There she met Romeo who was a amateur poet in Verona. Juliet and Romeo lived barely ever after. </i></p>   
@@ -2542,10 +2545,16 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
             'content_id' => 47,
             'isi' => '
 
-         <p>Demo berikut ini mirip dengan <i> Google Assistant </i>. Demo ini meminta pengguna untuk mengatakan sesuatu dan kemudian mengirimkan kata-kata tersebut ke Wikipedia. Biasanya, ada banyak hasil yang cocok sehingga program memilih salah satunya secara acak dan mengucapkannya. </p>
+         <p>Demo berikut ini mirip dengan <i class="highlight-word"> Google Assistant </i>. Demo ini meminta pengguna untuk mengatakan sesuatu dan kemudian mengirimkan kata-kata tersebut ke Wikipedia. Biasanya, ada banyak hasil yang cocok sehingga program memilih salah satunya secara acak dan mengucapkannya. </p>
      
  
-    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Wikipedia answers#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <figure class = "snap-iframe"
+        id = "Wikipedia answers"
+        full_screen = "true"
+        container_style = "width: 800px; height: 600px" 
+       >
+</figure>
+    <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=Wikipedia%20answers" class="font-bold text-primary" target="_blank">klik disini!</a></p>
      
      <img src="assets/wikipediablock.png" alt="" style="width: 40%;">
     <br>
@@ -2559,14 +2568,55 @@ Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?pro
         Material::create([
             'content_id' => 48,
             'isi' => '
-    <p>Berikut ini adalah demo antarmuka ucapan yang sangat sederhana ke layanan cuaca. Program ini meminta nama kota dan mengucapkan suhu saat ini serta perkiraan cuaca. Program cuaca dapat ditingkatkan dengan berbagai cara. Misalnya, program dapat menanyakan informasi cuaca apa yang diinginkan pengguna.</p>
+    <p>Berikut ini adalah demo antarmuka ucapan yang sangat sederhana ke <span class="highlight-word"> layanan cuaca </span>. Program ini meminta nama kota dan mengucapkan suhu saat ini serta perkiraan cuaca. Program cuaca dapat ditingkatkan dengan berbagai cara. Misalnya, program dapat menanyakan informasi cuaca apa yang diinginkan pengguna.</p>
     
-    <figure class="snap-iframe" id="numbers signs" container_style="width: 560px; height: 132px" caption=""> </figure> <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=weather#speech-recognition-sample-project" class="font-bold text-primary" target="_blank">klik disini!</a></p>
+    <figure class = "snap-iframe"
+        id = "weather"
+        full_screen = "true"
+        container_style = "width: 800px; height: 600px" 
+       >
+</figure>
+     <p class="mt-2 text-center">Jika gagal memuat, <a href="https://ecraft2learn.github.io/ai/snap/snap.html?project=weather" class="font-bold text-primary" target="_blank">klik disini!</a></p>
     
     <br><br>
             ',
             'xp' => 10
         ]);
+        
+        Material::create([
+            'content_id' => 49,
+            'isi' => '
+     <p><i class="highlight-word">Speech Recognition</i> dapat digunakan untuk mentranskrip ucapan yang diucapkan. Mereka yang tidak dapat mengetik atau menulis dapat menggunakannya untuk berkomunikasi secara tekstual dan menghasilkan catatan serta laporan. Ada banyak konteks khusus di mana teknologi ini sangat berguna. Misalnya, dokter dapat menghasilkan transkrip percakapan dengan pasien mereka, yang dapat meningkatkan catatan medis pasien. Transkripsi otomatis memungkinkan pencarian teks dalam video dan pembuatan caption untuk video. Dipadukan dengan terjemahan, <i>Speech Recognition</i> dapat memberikan input ke layanan terjemahan dan hasilnya dapat diubah menjadi ucapan dalam bahasa lain.</p><p>Penggunaan lain dari <i>Speech Recognition</i> adalah sebagai antarmuka ke komputer atau artefak digital. Aplikasi atau robot dapat dibuat untuk menerima perintah verbal. Ini sangat memberdayakan bagi orang-orang dengan disabilitas yang tidak dapat melakukan tugas-tugas tersebut sendiri. Asisten seperti <span class="highlight-word">Siri</span> dapat memberikan respons yang berguna terhadap pertanyaan yang diucapkan. Input dan output verbal dapat menjadi cara teraman untuk berkomunikasi dalam beberapa situasi seperti saat mengemudi atau memandu pesawat.</p>        
+    <br>
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 50,
+            'isi' => '
+    <p>Seperti banyak teknologi lainnya, <span class="highlight-word"><i>Speech Recognition</i> tentunya dapat disalahgunakan</span>. Bisa saja digunakan untuk memata-matai populasi secara luas. Contoh lainnya adalah layanan yang membutuhkan interaksi verbal antar manusia nantinya bisa saja digantikan dengan Speech Recognition, padahal tidak memiliki empati ataupun perasaan layaknya interaksi antar manusia Penggunaan robot pendamping untuk memberikan dukungan sosial saat ini menjadi kontroversial karena robot tersebut mungkin kurang pemahaman dan empati. Teknologi ucapan telah menjadi bagian dari mainan interaktif dan beberapa berpendapat bahwa anak-anak menjadi terlalu terikat secara emosional pada mereka.</p>
+    <p class="box-highlight">Apakah menurut kalian manfaatnya lebih besar daripada bahayanya? Apakah ada cara untuk menghindari bahaya tersebut?</p>
+    <br>
+            ',
+            'xp' => 10
+        ]);
+        Material::create([
+            'content_id' => 51,
+            'isi' => '
+     <p>Dimulai dengan <span class="highlight-word">mikrofon yang mengubah getaran di udara (yaitu, suara) menjadi angka (menggunakan sesuatu yang disebut konverter analog-ke-digital) </span>. Suara yang didigitalkan dipecah menjadi segmen pendek (seperseratus atau seperseribu detik panjangnya) dan dimasukkan ke dalam mesin pengenalan. Saat ini, yang terbaik mengandalkan jaringan saraf / <i>neural network </i>. Program statistik yang kompleks juga sering digunakan.</p><p>Ada banyak tantangan termasuk berbagai jenis suara, dialek, dan aksen yang mungkin dihadapi oleh mesin <i>Speech Recognition.</i> Seringkali ada suara latar belakang yang perlu dihilangkan dari sinyal.</p><br>
+    <p>Tantangan lainnya berasal dari <span class="highlight-word">kompleksitas bahasa manusia </span>. Ada banyak kata yang merupakan homonim, kata-kata berbeda yang terdengar sama. Memisahkan ucapan menjadi kata-kata yang terpisah itu sulit.</p>
+    <br>
+    <p class="box-highlight"> Contoh klasik adalah bagaimana <i> "recognise speech" </i> terdengar sangat mirip dengan <i> "wreck a nice beach". </i></p> <br><p>Saat menggunakan blok dan program contoh dalam bab ini, kita sering kali akan menemui kesalahan. Ini terkadang menggelikan, terutama ketika menyebabkan program melakukan sesuatu yang konyol. Untuk aplikasi di mana kesalahan komputer dapat menyebabkan masalah serius, antarmuka dapat dibuat sehingga meminta konfirmasi sebelum melanjutkan. Menarik untuk membandingkan kesalahan <i>Speech Recognition</i> dengan jenis dan frekuensi kesalahan yang dilakukan manusia saat mendengarkan ucapan.</p>
+    <br>
+
+    <br><br>
+            ',
+            'xp' => 10
+        ]);
+
+
+
+
         Material::create([
             'content_id' => 57,
             'isi' => '
